@@ -7,5 +7,5 @@
 
 # Раздел 2. Элементы компоновки
 
-- [Часть 1. «Класс UIExLayout. Основы компоновки»](2.1-UIExLayout)
-- [Часть 2. «Класс UIExStackPanel»](2.2-UIExStackPanel)
+- [Часть 1. «Класс UIExLayout. Основы компоновки»](2.1-UIExLayout.md)
+- [Часть 2. «Класс UIExStackPanel»](2.2-UIExStackPanel.md)
