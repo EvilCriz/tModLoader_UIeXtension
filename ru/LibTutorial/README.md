@@ -9,3 +9,6 @@
 
 - [Часть 1. «Класс UIExLayout. Основы компоновки»](Раздел-2/2.1-UIExLayout.md)
 - [Часть 2. «Класс UIExStackPanel»](Раздел-2/2.2-UIExStackPanel.md)
+- [Часть 3. «Класс UIExDockPanel»](Раздел-2/2.3-UIExDockPanel.md)
+- [Часть 4. «Класс UIExGrid»](Раздел-2/2.4-UIExGrid.md)
+- [Часть 5. «Класс UIExUniformGrid»](Раздел-2/2.5-UIExUniformGrid.md)
