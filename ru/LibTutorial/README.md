@@ -1,6 +1,6 @@
 <h1 align="center"><a href="Раздел-1">Раздел 1. Введение</a></h1>
 
-- [Часть 1. «Структура библиотеки»](Раздел-1/1.1-StructureLib.md)
+<a href="Раздел-1/1.1-StructureLib.md">Часть 1. «Структура библиотеки»<a/>
 - [Часть 2. «Класс UIExModSystem»](Раздел-1/1.2-UIExModSystemClass.md)
 - [Часть 3. «Структура стилей»](Раздел-1/1.3-StyleStructure.md)
 - [Часть 3. «Дополнительные ресурсы для изучения»](Раздел-1/1.4-additional-learning-resources.md)
