@@ -13,3 +13,7 @@
 - [Часть 4. «Класс UIExDockPanel»](Раздел-2/2.4-UIExDockPanel.md)
 - [Часть 5. «Класс UIExGrid»](Раздел-2/2.5-UIExGrid.md)
 - [Часть 6. «Класс UIExUniformGrid»](Раздел-2/2.6-UIExUniformGrid.md)
+<br><br><br>
+- [Часть 999.1. «Оптимизация»](Раздел-2/2.999.1-Optimization.md)
+- [Часть 999.2. «Жизненный цикл компоновки элементов»](Раздел-2/2.999.2-LayoutLifeCycle.md)
+- [Часть 999.3. «Рекомендации по созданию своих контейнеров компоновки»](Раздел-2/2.999.3-RecCreatingLayoutContainers.md)
