@@ -1,0 +1,9 @@
+Вот так все отлично.
+
+var HPanel2Style = HStackPanel.GetOrRegisterStyleLayoutChild(HPanel2);
+HPanel2Style.Margin.SetPrecent(
+    left:       0f, 
+    top:        0.25f, 
+    right:      0f, 
+    bottom:     0.25f);
+	
