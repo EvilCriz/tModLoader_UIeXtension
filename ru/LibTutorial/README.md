@@ -16,6 +16,7 @@
   <li><a href="Раздел-2/2.4-UIExDockPanel.md">Часть 4. «Класс UIExDockPanel»</a></li>
   <li><a href="Раздел-2/2.5-UIExGrid.md">Часть 5. «Класс UIExGrid»</a></li>
   <li><a href="Раздел-2/2.6-UIExUniformGrid.md">Часть 6. «Класс UIExUniformGrid»</a></li>
+  <li><a href="Раздел-2/2.7-UIExFlexBox.md">Часть 7. «Класс UIExFlexBox»</a></li>
 </ul>
 <br><br><br>
 <ul>
