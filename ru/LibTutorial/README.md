@@ -4,7 +4,7 @@
   <li><a href="Раздел-1/1.1-StructureLib.md">Часть 1. «Структура библиотеки»</a></li>
   <li><a href="Раздел-1/1.2-UIExModSystemClass.md">Часть 2. «Класс UIExModSystem»</a></li>
   <li><a href="Раздел-1/1.3-StyleStructure.md">Часть 3. «Структура стилей»</a></li>
-  <li><a href="Раздел-1/1.4-additional-learning-resources.md">Часть 3. «Дополнительные ресурсы для изучения»</a></li>
+  <li><a href="Раздел-1/1.4-AdditionalLearningResources.md">Часть 3. «Дополнительные ресурсы для изучения»</a></li>
 </ul>
 
 <h1 align="center"><a href="Раздел-2">Раздел 2. Элементы компоновки</a></h1>
