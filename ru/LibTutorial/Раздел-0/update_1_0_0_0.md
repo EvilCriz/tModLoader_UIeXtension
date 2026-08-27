@@ -64,7 +64,7 @@
    - `UIExOrientation`;
    - `UIExAlignment`;
    - `UIExSide`;
-   - `UIExGridLengthType`.
+   - `UIExGridLengthType`.<br>
 <!-- -->
 
 7. Вспомогательные классы: аналоги **tModLoader**:
