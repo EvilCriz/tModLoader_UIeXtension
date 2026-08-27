@@ -8,4 +8,4 @@
 
 # RU
 
-- [LibTutorail](ru/LibTutorial/README.md)
+- [Обучающие материалы](ru/LibTutorial/README.md)
