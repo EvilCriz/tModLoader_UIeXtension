@@ -8,15 +8,85 @@
 
 ----
 
+<h2 align="center">Добавленные классы / перечисления</h2>
+
 При выпуске в библиотеку добавлены:
 
-1. Вспомогательный класс `UIExSystem`.
-2. UI-элемент: `UIExElement`.
-3. Контейнеры компоновки:
+1. Классы UI-элементы (не компоновщиков):
+   - `UIExElement`.<br>
+<!-- -->
+
+2. Классы контейнеров компоновки:
    - `UIExLayout`;
    - `UIExCanvas`;
+   - `UIExFlowPanel`
    - `UIExStackPanel`;
    - `UIExWrapPanel`;
    - `UIExDockPanel`;
+   - `UIExGridBase`;
    - `UIExGrid`;
-   - `UIExUniformGrid`;
+   - `UIExUniformGrid`.<br>
+<!-- -->
+
+3. Классы стилей:
+  - `StyleBase`;
+  - `StyleVisualBase`;
+  - `StyleLayoutContainerBase`;
+  - `StyleLayoutChildBase`;
+  - `StyleVisualElement`;
+  - `StyleLayoutContainer`;
+  - `StyleLayoutContainerCanvas`;
+  - `StyleLayoutContainerStackPanel`;
+  - `StyleLayoutContainerWrapPanel`;
+  - `StyleLayoutContainerDockPanel`;
+  - `StyleLayoutContainerGrid`;
+  - `StyleLayoutContainerUniformGrid`;
+  - `StyleLayoutChild`;
+  - `StyleLayoutChildCanvas`;
+  - `StyleLayoutChildDockPanel`;
+  - `StyleLayoutChildGrid`;
+  - `StyleLayoutChildUniformGrid`.<br>
+<!-- -->
+
+4. Вспомогательные классы для компоновки:
+   - `RectangleLayoutContext`;
+   - `UIExRectangle`;
+   - `LayoutDebugRectangle`.<br>
+<!-- -->
+
+5. Вспомогательные классы для стилей:
+   - `StyleSide`;
+   - `UIExGridLength`;
+   - `UIExThickness`.<br>
+<!-- -->
+
+6. Перечисления:
+   - `UIExOrientation`;
+   - `UIExAlignment`;
+   - `UIExSide`;
+   - `UIExGridLengthType`.
+<!-- -->
+
+7. Вспомогательные классы: аналоги **tModLoader**:
+   - `UIExModSystem`.<br>
+<!-- -->
+
+8. Статические классы для методов расширений:
+   - `UIElementExtensions`.<br>
+<!-- -->
+
+9. Статические классы-утилиты:
+   - `UtilsStyles`;
+   - `UtilsLayout`;
+   - `UtilsFinder`.<br>
+<!-- -->
+
+----
+
+<h2 align="center">Добавленные статьи в обучающие статьи библиотеки</h2>
+
+Большая часть классов и перечислений выше описана в обучающих статьях.<br>
+
+Добавленные статьи:
+- Раздел 1.
+  1. Привет
