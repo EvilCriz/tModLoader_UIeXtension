@@ -13,7 +13,7 @@
 При выпуске в библиотеку добавлены:
 
 1. Классы UI-элементы (не компоновщиков):
-   - `UIExElement`.<br>
+   - `UIExElement`.<br><br>
 <!-- -->
 
 2. Классы контейнеров компоновки:
@@ -25,7 +25,7 @@
    - `UIExDockPanel`;
    - `UIExGridBase`;
    - `UIExGrid`;
-   - `UIExUniformGrid`.<br>
+   - `UIExUniformGrid`.<br><br>
 <!-- -->
 
 3. Классы стилей:
@@ -45,40 +45,40 @@
   - `StyleLayoutChildCanvas`;
   - `StyleLayoutChildDockPanel`;
   - `StyleLayoutChildGrid`;
-  - `StyleLayoutChildUniformGrid`.<br>
+  - `StyleLayoutChildUniformGrid`.<br><br>
 <!-- -->
 
 4. Вспомогательные классы для компоновки:
    - `RectangleLayoutContext`;
    - `UIExRectangle`;
-   - `LayoutDebugRectangle`.<br>
+   - `LayoutDebugRectangle`.<br><br>
 <!-- -->
 
 5. Вспомогательные классы для стилей:
    - `StyleSide`;
    - `UIExGridLength`;
-   - `UIExThickness`.<br>
+   - `UIExThickness`.<br><br>
 <!-- -->
 
 6. Перечисления:
    - `UIExOrientation`;
    - `UIExAlignment`;
    - `UIExSide`;
-   - `UIExGridLengthType`.<br>
+   - `UIExGridLengthType`.<br><br>
 <!-- -->
 
 7. Вспомогательные классы: аналоги **tModLoader**:
-   - `UIExModSystem`.<br>
+   - `UIExModSystem`.<br><br>
 <!-- -->
 
 8. Статические классы для методов расширений:
-   - `UIElementExtensions`.<br>
+   - `UIElementExtensions`.<br><br>
 <!-- -->
 
 9. Статические классы-утилиты:
    - `UtilsStyles`;
    - `UtilsLayout`;
-   - `UtilsFinder`.<br>
+   - `UtilsFinder`.<br><br>
 <!-- -->
 
 ----
