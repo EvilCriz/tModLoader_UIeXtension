@@ -18,7 +18,7 @@
   <li><a href="Раздел-2/2.6-UIExGrid.md">Часть 6. «Класс UIExGrid»</a></li>
   <li><a href="Раздел-2/2.7-UIExUniformGrid.md">Часть 7. «Класс UIExUniformGrid»</a></li>
   <li><a href="Раздел-2/2.8-UIExFlexBox.md">Часть 8. «Класс UIExFlexBox»</a></li>
-  <li><a href="Раздел-2/2.999.1-Optimization.md">Часть 999.1. «Оптимизация»</a></li>
-  <li><a href="Раздел-2/2.999.2-LayoutLifeСycle.md">Часть 999.2. «Жизненный цикл компоновки элементов»</a></li>
-  <li><a href="Раздел-2/2.999.3-RecСreatingLayoutContainers.md">Часть 999.3. «Рекомендации по созданию своих контейнеров компоновки»</a></li>
+  <li><a href="Раздел-2/2.999.1-Optimization.md">Часть 9. «Оптимизация»</a></li>
+  <li><a href="Раздел-2/2.999.2-LayoutLifeСycle.md">Часть 10. «Жизненный цикл компоновки элементов»</a></li>
+  <li><a href="Раздел-2/2.999.3-RecСreatingLayoutContainers.md">Часть 11. «Рекомендации по созданию своих контейнеров компоновки»</a></li>
 </ul>
