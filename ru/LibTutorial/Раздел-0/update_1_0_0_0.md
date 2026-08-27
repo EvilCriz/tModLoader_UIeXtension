@@ -13,72 +13,72 @@
 При выпуске в библиотеку добавлены:
 
 1. Классы UI-элементы (не компоновщиков):
-   - `UIExElement`.<br><br>
+- `UIExElement`.<br><br>
 <!-- -->
 
 2. Классы контейнеров компоновки:
-   - `UIExLayout`;
-   - `UIExCanvas`;
-   - `UIExFlowPanel`
-   - `UIExStackPanel`;
-   - `UIExWrapPanel`;
-   - `UIExDockPanel`;
-   - `UIExGridBase`;
-   - `UIExGrid`;
-   - `UIExUniformGrid`.<br><br>
+- `UIExLayout`;
+- `UIExCanvas`;
+- `UIExFlowPanel`
+- `UIExStackPanel`;
+- `UIExWrapPanel`;
+- `UIExDockPanel`;
+- `UIExGridBase`;
+- `UIExGrid`;
+- `UIExUniformGrid`.<br><br>
 <!-- -->
 
 3. Классы стилей:
-  - `StyleBase`;
-  - `StyleVisualBase`;
-  - `StyleLayoutContainerBase`;
-  - `StyleLayoutChildBase`;
-  - `StyleVisualElement`;
-  - `StyleLayoutContainer`;
-  - `StyleLayoutContainerCanvas`;
-  - `StyleLayoutContainerStackPanel`;
-  - `StyleLayoutContainerWrapPanel`;
-  - `StyleLayoutContainerDockPanel`;
-  - `StyleLayoutContainerGrid`;
-  - `StyleLayoutContainerUniformGrid`;
-  - `StyleLayoutChild`;
-  - `StyleLayoutChildCanvas`;
-  - `StyleLayoutChildDockPanel`;
-  - `StyleLayoutChildGrid`;
-  - `StyleLayoutChildUniformGrid`.<br><br>
+- `StyleBase`;
+- `StyleVisualBase`;
+- `StyleLayoutContainerBase`;
+- `StyleLayoutChildBase`;
+- `StyleVisualElement`;
+- `StyleLayoutContainer`;
+- `StyleLayoutContainerCanvas`;
+- `StyleLayoutContainerStackPanel`;
+- `StyleLayoutContainerWrapPanel`;
+- `StyleLayoutContainerDockPanel`;
+- `StyleLayoutContainerGrid`;
+- `StyleLayoutContainerUniformGrid`;
+- `StyleLayoutChild`;
+- `StyleLayoutChildCanvas`;
+- `StyleLayoutChildDockPanel`;
+- `StyleLayoutChildGrid`;
+- `StyleLayoutChildUniformGrid`.<br><br>
 <!-- -->
 
 4. Вспомогательные классы для компоновки:
-   - `RectangleLayoutContext`;
-   - `UIExRectangle`;
-   - `LayoutDebugRectangle`.<br><br>
+- `RectangleLayoutContext`;
+- `UIExRectangle`;
+- `LayoutDebugRectangle`.<br><br>
 <!-- -->
 
 5. Вспомогательные классы для стилей:
-   - `StyleSide`;
-   - `UIExGridLength`;
-   - `UIExThickness`.<br><br>
+- `StyleSide`;
+- `UIExGridLength`;
+- `UIExThickness`.<br><br>
 <!-- -->
 
 6. Перечисления:
-   - `UIExOrientation`;
-   - `UIExAlignment`;
-   - `UIExSide`;
-   - `UIExGridLengthType`.<br><br>
+- `UIExOrientation`;
+- `UIExAlignment`;
+- `UIExSide`;
+- `UIExGridLengthType`.<br><br>
 <!-- -->
 
 7. Вспомогательные классы: аналоги **tModLoader**:
-   - `UIExModSystem`.<br><br>
+- `UIExModSystem`.<br><br>
 <!-- -->
 
 8. Статические классы для методов расширений:
-   - `UIElementExtensions`.<br><br>
+- `UIElementExtensions`.<br><br>
 <!-- -->
 
 9. Статические классы-утилиты:
-   - `UtilsStyles`;
-   - `UtilsLayout`;
-   - `UtilsFinder`.<br><br>
+- `UtilsStyles`;
+- `UtilsLayout`;
+- `UtilsFinder`.<br><br>
 <!-- -->
 
 ----
@@ -89,23 +89,25 @@
 
 Добавленные статьи:
 1. Раздел 1:
-  - «Структура библиотеки»;
-  - «Класс `UIExModSystem`»;
-  - «Структура стилей»;
-  - «Дополнительные ресурсы для изучения».
+- «Структура библиотеки»;
+- «Класс `UIExModSystem`»;
+- «Структура стилей»;
+- «Дополнительные ресурсы для изучения».<br><br>
+<!-- -->
 2. Раздел 2:
-   - «Класс `UIExLayout`. Основы компоновки»;
-   - «Класс `UIExCanvas`»;
-   - «Класс `UIExStackPanel`»;
-   - «Класс `UIExWrapPanel`»;
-   - «Класс `UIExDockPanel`»;
-   - «Класс `UIExGrid`»;
-   - «Класс `UIExUniformGrid`»;
-   - «Оптимизация элементов компоновки»;
-   - «Жизненный цикл элементов компоновки»;
-   - «Рекомендации по созданию своих контейнеров компоновки».
+- «Класс `UIExLayout`. Основы компоновки»;
+- «Класс `UIExCanvas`»;
+- «Класс `UIExStackPanel`»;
+- «Класс `UIExWrapPanel`»;
+- «Класс `UIExDockPanel`»;
+- «Класс `UIExGrid`»;
+- «Класс `UIExUniformGrid`»;
+- «Оптимизация элементов компоновки»;
+- «Жизненный цикл элементов компоновки»;
+- «Рекомендации по созданию своих контейнеров компоновки».<br><br>
+<!-- -->
 3. Раздел 3:
-   - «Класс `UIExElement`» (написана частично);
+- «Класс `UIExElement`» (написана частично).<br><br>
 
 ----
 
