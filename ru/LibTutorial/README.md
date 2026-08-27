@@ -38,5 +38,5 @@
 <h1 align="center"><a href="Раздел-3">Раздел 3. Элементы пользовательского интерфейса</a></h1>
 
 <ul>
-  <li><a href="Раздел-3/3.1-UIExElement.md">Часть 1. «Класс UIExElement. Основы стилей визуального отображения»</a></li>
+  <li><a href="Раздел-3/3.1-UIExElement.md">Часть 1. «Класс UIExElement»</a></li>
 </ul>
