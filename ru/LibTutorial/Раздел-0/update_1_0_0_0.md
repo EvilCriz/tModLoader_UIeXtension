@@ -33,6 +33,7 @@
 - `StyleVisualBase`;
 - `StyleLayoutContainerBase`;
 - `StyleLayoutChildBase`;
+- `StyleTmlBase`;
 - `StyleVisualElement`;
 - `StyleLayoutContainer`;
 - `StyleLayoutContainerCanvas`;
@@ -45,7 +46,8 @@
 - `StyleLayoutChildCanvas`;
 - `StyleLayoutChildDockPanel`;
 - `StyleLayoutChildGrid`;
-- `StyleLayoutChildUniformGrid`.<br><br>
+- `StyleLayoutChildUniformGrid`;
+- `StyleTmlUIPanel`.<br><br>
 <!-- -->
 
 4. Вспомогательные классы для компоновки:
