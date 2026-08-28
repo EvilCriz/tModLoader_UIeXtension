@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class UIExModSystem&lt;TUIState&gt; </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class UIExModSystem&lt;TUIState&gt; ">
+    
+    <meta name="description" content="Вспомогательный класс, созданный для упрощенного создания базовой реализации ModSystem, требующейся для создания пользовательского интерфейса.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UIeXtension.UIExModSystem`1">
+
+
+
+  <h1 id="UIeXtension_UIExModSystem_1" data-uid="UIeXtension.UIExModSystem`1" class="text-break">Class UIExModSystem&lt;TUIState&gt;</h1>
+  <div class="markdown level0 summary"><p>Вспомогательный класс, созданный для упрощенного создания базовой реализации ModSystem,
+требующейся для создания пользовательского интерфейса.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">UIExModSystem&lt;TUIState&gt;</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UIeXtension.html">UIeXtension</a></h6>
+  <h6><strong>Assembly</strong>: UIeXtension.dll</h6>
+  <h5 id="UIeXtension_UIExModSystem_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class UIExModSystem&lt;TUIState&gt; : ModSystem where TUIState : UIState, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TUIState</span></td>
+        <td><p>UIState, жизненным циклом которого будет управлять данный класс</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="UIeXtension_UIExModSystem_1__ctor_" data-uid="UIeXtension.UIExModSystem`1.#ctor*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1__ctor" data-uid="UIeXtension.UIExModSystem`1.#ctor">UIExModSystem()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UIExModSystem()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="UIeXtension_UIExModSystem_1_InterfaceLayerDescription_" data-uid="UIeXtension.UIExModSystem`1.InterfaceLayerDescription*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_InterfaceLayerDescription" data-uid="UIeXtension.UIExModSystem`1.InterfaceLayerDescription">InterfaceLayerDescription</h4>
+  <div class="markdown level1 summary"><p>Хранит значение, использующееся в <a class="xref" href="UIeXtension.UIExModSystem-1.html#UIeXtension_UIExModSystem_1_ModifyInterfaceLayers_System_Collections_Generic_List_Terraria_UI_GameInterfaceLayer__">ModifyInterfaceLayers(List&lt;GameInterfaceLayer&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string InterfaceLayerDescription { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UIeXtension_UIExModSystem_1_InterfaceLayerName_" data-uid="UIeXtension.UIExModSystem`1.InterfaceLayerName*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_InterfaceLayerName" data-uid="UIeXtension.UIExModSystem`1.InterfaceLayerName">InterfaceLayerName</h4>
+  <div class="markdown level1 summary"><p>Хранит значение, использующееся в <a class="xref" href="UIeXtension.UIExModSystem-1.html#UIeXtension_UIExModSystem_1_ModifyInterfaceLayers_System_Collections_Generic_List_Terraria_UI_GameInterfaceLayer__">ModifyInterfaceLayers(List&lt;GameInterfaceLayer&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string InterfaceLayerName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UIeXtension_UIExModSystem_1_InterfaceState_" data-uid="UIeXtension.UIExModSystem`1.InterfaceState*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_InterfaceState" data-uid="UIeXtension.UIExModSystem`1.InterfaceState">InterfaceState</h4>
+  <div class="markdown level1 summary"><p>Управляет обновлением и отрисовкой <a class="xref" href="UIeXtension.UIExModSystem-1.html#UIeXtension_UIExModSystem_1_State">State</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UserInterface InterfaceState { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UserInterface</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UIeXtension_UIExModSystem_1_LastState_" data-uid="UIeXtension.UIExModSystem`1.LastState*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_LastState" data-uid="UIeXtension.UIExModSystem`1.LastState">LastState</h4>
+  <div class="markdown level1 summary"><p>Хранит последнее состояние <a class="xref" href="UIeXtension.UIExModSystem-1.html#UIeXtension_UIExModSystem_1_State">State</a> / <a class="xref" href="UIeXtension.UIExModSystem-1.html#UIeXtension_UIExModSystem_1_InterfaceState">InterfaceState</a> (отображается / скрыт)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool LastState { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UIeXtension_UIExModSystem_1_State_" data-uid="UIeXtension.UIExModSystem`1.State*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_State" data-uid="UIeXtension.UIExModSystem`1.State">State</h4>
+  <div class="markdown level1 summary"><p>Пользовательский объект UIState</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TUIState State { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUIState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="UIeXtension_UIExModSystem_1_GetState_" data-uid="UIeXtension.UIExModSystem`1.GetState*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_GetState" data-uid="UIeXtension.UIExModSystem`1.GetState">GetState()</h4>
+  <div class="markdown level1 summary"><p>Возвращает состояние <a class="xref" href="UIeXtension.UIExModSystem-1.html#UIeXtension_UIExModSystem_1_State">State</a> (скрыт/отображается)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool GetState()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UIeXtension_UIExModSystem_1_GetUIState_" data-uid="UIeXtension.UIExModSystem`1.GetUIState*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_GetUIState" data-uid="UIeXtension.UIExModSystem`1.GetUIState">GetUIState()</h4>
+  <div class="markdown level1 summary"><p>Возвращает <a class="xref" href="UIeXtension.UIExModSystem-1.html#UIeXtension_UIExModSystem_1_State">State</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TUIState GetUIState()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TUIState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UIeXtension_UIExModSystem_1_Hide_" data-uid="UIeXtension.UIExModSystem`1.Hide*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_Hide" data-uid="UIeXtension.UIExModSystem`1.Hide">Hide()</h4>
+  <div class="markdown level1 summary"><p>Скрывает пользовательский интерфейс, если он отображается.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Hide()</code></pre>
+  </div>
+
+
+  <a id="UIeXtension_UIExModSystem_1_Load_" data-uid="UIeXtension.UIExModSystem`1.Load*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_Load" data-uid="UIeXtension.UIExModSystem`1.Load">Load()</h4>
+  <div class="markdown level1 summary"><p>Базовая реализация <span class="xref">Terraria.ModLoader.ModSystem</span> для загрузки пользовательского интерфейса</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Load()</code></pre>
+  </div>
+
+
+  <a id="UIeXtension_UIExModSystem_1_ModifyInterfaceLayers_" data-uid="UIeXtension.UIExModSystem`1.ModifyInterfaceLayers*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_ModifyInterfaceLayers_System_Collections_Generic_List_Terraria_UI_GameInterfaceLayer__" data-uid="UIeXtension.UIExModSystem`1.ModifyInterfaceLayers(System.Collections.Generic.List{Terraria.UI.GameInterfaceLayer})">ModifyInterfaceLayers(List&lt;GameInterfaceLayer&gt;)</h4>
+  <div class="markdown level1 summary"><p>Базовая реализация <span class="xref">Terraria.ModLoader.ModSystem</span> для вывода пользовательского интерфейса</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ModifyInterfaceLayers(List&lt;GameInterfaceLayer&gt; layers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">GameInterfaceLayer</span>&gt;</td>
+        <td><span class="parametername">layers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UIeXtension_UIExModSystem_1_SetState_" data-uid="UIeXtension.UIExModSystem`1.SetState*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_SetState_System_Boolean_" data-uid="UIeXtension.UIExModSystem`1.SetState(System.Boolean)">SetState(bool)</h4>
+  <div class="markdown level1 summary"><p>Позволяет задать состояние (отображается / скрыт) пользовательского интерфейса</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetState(bool state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>Новое состояние (отображается / скрыт) пользовательского интерфейса</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UIeXtension_UIExModSystem_1_Show_" data-uid="UIeXtension.UIExModSystem`1.Show*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_Show" data-uid="UIeXtension.UIExModSystem`1.Show">Show()</h4>
+  <div class="markdown level1 summary"><p>Отображает пользовательский интерфейс, если он скрыт.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Show()</code></pre>
+  </div>
+
+
+  <a id="UIeXtension_UIExModSystem_1_SwitchState_" data-uid="UIeXtension.UIExModSystem`1.SwitchState*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_SwitchState" data-uid="UIeXtension.UIExModSystem`1.SwitchState">SwitchState()</h4>
+  <div class="markdown level1 summary"><p>Меняет состояние пользовательского интерфейса. Если отображается - скрывает; если скрыт - отображает.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SwitchState()</code></pre>
+  </div>
+
+
+  <a id="UIeXtension_UIExModSystem_1_UpdateUI_" data-uid="UIeXtension.UIExModSystem`1.UpdateUI*"></a>
+  <h4 id="UIeXtension_UIExModSystem_1_UpdateUI_Microsoft_Xna_Framework_GameTime_" data-uid="UIeXtension.UIExModSystem`1.UpdateUI(Microsoft.Xna.Framework.GameTime)">UpdateUI(GameTime)</h4>
+  <div class="markdown level1 summary"><p>Базовая реализация <span class="xref">Terraria.ModLoader.ModSystem</span> для обновления пользовательского интерфейса</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateUI(GameTime gameTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameTime</span></td>
+        <td><span class="parametername">gameTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
