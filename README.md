@@ -42,7 +42,7 @@ I live and reside in Ukraine.
 # RU
 
 - <a href="ru/LibTutorial/README.md">Обучающие материалы</a>
-- <a href="ru/LibDocumentation/README.md">Автоматически сгенерированная документация</a>
+- <a href="en/LibDocumentation/README.md">Автоматически сгенерированная документация</a>
   - В данный момент ведется работа над созданием генератора `Markdown` документации.
   - Исключительно на английском языке.
 - <a href="en/LibProject/">Исходный код (с комментариями)</a>
