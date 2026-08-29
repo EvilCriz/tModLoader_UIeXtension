@@ -42,5 +42,5 @@
 <h1 align="center"><a href="Розділ-3">Розділ 3: «Елементи інтерфейсу користувача»</a></h1>
 
 <ul>
-  <li><a href="Розділ-3/3.1-UIExElement.md">Частина 1. “Клас UIExElement»</a></li>
+  <li><a href="Розділ-3/3.1-UIExElement.md">Частина 1. «Клас UIExElement»</a></li>
 </ul>
