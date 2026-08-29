@@ -1,10 +1,20 @@
 # UK
 
-
+- <a href="uk/LibTutorial/README.md">Навчальні матеріали</a>
+- <a href="uk/LibDocumentation/README.md">Автоматично згенерована документація</a>
+  - Наразі ведеться робота над створенням генератора `Markdown` документації.
+- <a href="uk/LibProject/">Вихідний код (з коментарями)</a>
+- <a href="ExampleModUIeXtension">Вихідний код моду-прикладу</a>
+  - Мод-приклад наразі перебуває у сирому вигляді. На даний момент у ньому зібрані лише UI з прикладів навчальних матеріалів.
 
 # EN
 
-
+- <a href="en/LibTutorial/README.md">Tutorial materials</a>
+- <a href="en/LibDocumentation/README.md">Automatically generated documentation</a>
+  - Work is currently underway on creating a `Markdown` documentation generator.
+- <a href="en/LibProject/">Source code (with comments)</a>
+- <a href="ExampleModUIeXtension">Example mod source code</a>
+  - The example mod is currently in a raw state. At the moment, it only contains the UI from the tutorial examples.
 
 # RU
 
@@ -13,4 +23,4 @@
   - В данный момент ведется работа над созданием генератора `Markdown` документации.
 - <a href="ru/LibProject/">Исходный код (с комментариями)</a>
 - <a href="ExampleModUIeXtension">Исходный код мода-примера</a>
-  - Мод-пример в данный в сыром виде. На данный момент в нем собраны только UI из примеров обучающих материалов.
+  - Мод-пример в данный момент в сыром виде. На данный момент в нем собраны только UI из примеров обучающих материалов.
