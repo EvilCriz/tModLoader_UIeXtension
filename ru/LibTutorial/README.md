@@ -1,10 +1,15 @@
+<h1 align="center"><a href=https://github.com/EvilCriz/tModLoader_UIeXtension">tModLoader_UIeXtension</a></h1>
+
+<hr>
+<hr>
+
 <h1 align="center"><a href="Раздел-0">Раздел 0. Обновления</a></h1>
 
 <ul>
   <li><a href="Раздел-0/update_1_0_0_0.md">Обновление 1.0 (первый выпуск библиотеки)</a></li>
 </ul>
 
-----
+<hr>
 
 <h1 align="center"><a href="Раздел-1">Раздел 1. Введение</a></h1>
 
@@ -14,7 +19,7 @@
   <li><a href="Раздел-1/1.3-StyleStructure.md">Часть 3. «Структура стилей»</a></li>
 </ul>
 
-----
+<hr>
 
 <h1 align="center"><a href="Раздел-2">Раздел 2. Элементы компоновки</a></h1>
 
@@ -32,7 +37,7 @@
   <li><a href="Раздел-2/2.999.3-RecСreatingLayoutContainers.md">Часть 11. «Рекомендации по созданию своих контейнеров компоновки»</a></li>
 </ul>
 
-----
+<hr>
 
 <h1 align="center"><a href="Раздел-3">Раздел 3. Элементы пользовательского интерфейса</a></h1>
 
