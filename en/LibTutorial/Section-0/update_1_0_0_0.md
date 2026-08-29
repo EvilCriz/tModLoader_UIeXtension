@@ -62,7 +62,7 @@ Upon release to the library added:
 - `UIExThickness`.<br><br>
 <!-- -->
 
-6. Lists:
+6. Enums:
 - `UIExOrientation`;
 - `UIExAlignment`;
 - `UIExSide`;
@@ -91,25 +91,25 @@ Most of the classes and enumerations above are described in the training article
 
 Added articles:
 1. Section 1:
-- "Library structure";
-- "Classy." `UIExModSystem`»;
-- "Structure of styles";
-- “Additional resources to study.”<br><br>
+- «Library structure»;
+- «Class `UIExModSystem`»;
+- «Structure of styles»;
+- «Additional resources to study.»<br><br>
 <!-- -->
 2. Section 2:
-- "Classy." `UIExLayout`Basics of layout”;
-- "Classy." `UIExCanvas`»;
-- "Classy." `UIExStackPanel`»;
-- "Classy." `UIExWrapPanel`»;
-- "Classy." `UIExDockPanel`»;
-- "Classy." `UIExGrid`»;
-- "Classy." `UIExUniformGrid`»;
-- “Optimization of layout elements”;
-- "Life cycle of elements of the layout";
-- "Recommendations for creating your own container layout."<br><br>
+- «Class `UIExLayout`. Basics of layout»;
+- «Class `UIExCanvas`»;
+- «Class `UIExStackPanel`»;
+- «Class `UIExWrapPanel`»;
+- «Class `UIExDockPanel`»;
+- «Class `UIExGrid`»;
+- «Class `UIExUniformGrid`»;
+- «Optimization of layout elements»;
+- «Life cycle of elements of the layout»;
+- «Recommendations for creating your own container layout.»<br><br>
 <!-- -->
 3. Section 3:
-- "Classy." `UIExElement`(incompletely written. Classy) `UIExElement` Implemented to date in part).<br><br>
+- «Class `UIExElement` (incompletely written). `UIExElement` Implemented to date in part».<br><br>
 
 ----
 
