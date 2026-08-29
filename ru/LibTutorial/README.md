@@ -1,6 +1,17 @@
 <h1 align="center"><a href="https://github.com/EvilCriz/tModLoader_UIeXtension/tree/main">tModLoader_UIeXtension</a></h1>
 
 <hr>
+
+Помогите, пожалуйста, данному проекту:
+- <a href="https://ko-fi.com/evilcriz">Co-fi></a>
+- <a href="https://www.patreon.com/cw/EvilCriz">Patreon</a><br>
+
+Благодаря вашей помощи я могу продолжать заниматься данным и другими проектами.<br>
+Спасибо!<br><br>
+
+**Важно!!** Если вы имеете отношение к РФ - поддержка данного проекта может быть для вас **опасна**!<br>
+Я нахожусь и живу в Украине.
+
 <hr>
 
 <h1 align="center"><a href="Раздел-0">Раздел 0. Обновления</a></h1>
