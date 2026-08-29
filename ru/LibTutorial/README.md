@@ -1,4 +1,4 @@
-<h1 align="center"><a href=https://github.com/EvilCriz/tModLoader_UIeXtension">tModLoader_UIeXtension</a></h1>
+<h1 align="center"><a href="https://github.com/EvilCriz/tModLoader_UIeXtension/tree/main">tModLoader_UIeXtension</a></h1>
 
 <hr>
 <hr>
