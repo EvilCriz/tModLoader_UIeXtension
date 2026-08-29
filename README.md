@@ -11,13 +11,10 @@
 
 ----
 
-Будь ласка, підтримайте цей проєкт:
+Будь ласка, підтримайте цей проєкт: <a href="https://ko-fi.com/evilcriz">Ko-fi</a>, <a href="https://www.patreon.com/cw/EvilCriz">Patreon</a><br>
 
-<a href="https://ko-fi.com/evilcriz">Ko-fi</a>
-<a href="https://www.patreon.com/cw/EvilCriz">Patreon</a><br>
-
-Завдяки вашій підтримці я можу продовжувати працювати над цим та іншими проєктами.<br>
-Дякую!<br><br>
+- Завдяки вашій підтримці я можу продовжувати працювати над цим та іншими проєктами.<br>
+- Дякую!<br>
 
 ----
 
@@ -32,13 +29,10 @@
 
 ----
 
-Please consider supporting this project:
+Please consider supporting this project: <a href="https://ko-fi.com/evilcriz">Ko-fi</a>, <a href="https://www.patreon.com/cw/EvilCriz">Patreon</a><br>
 
-* <a href="https://ko-fi.com/evilcriz">Ko-fi</a>
-* <a href="https://www.patreon.com/cw/EvilCriz">Patreon</a><br>
-
-Thanks to your support, I can continue working on this and other projects.<br>
-Thank you!<br><br>
+- Thanks to your support, I can continue working on this and other projects.<br>
+- Thank you!<br>
 
 **Important!!** If you have any ties to the Russian Federation, supporting this project may be **dangerous for you**!<br>
 I live and reside in Ukraine.
