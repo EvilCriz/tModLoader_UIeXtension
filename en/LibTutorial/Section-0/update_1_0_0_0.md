@@ -109,7 +109,7 @@ Added articles:
 - «Recommendations for creating your own container layout.»<br><br>
 <!-- -->
 3. Section 3:
-- «Class `UIExElement` (incompletely written). `UIExElement` Implemented to date in part».<br><br>
+- «Class `UIExElement` (incompletely written). `UIExElement` implemented to date in part».<br><br>
 
 ----
 
