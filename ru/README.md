@@ -5,7 +5,7 @@
 
 ----
 
-Помогите, пожалуйста, данному проекту: <a href="https://ko-fi.com/evilcriz">Co-fi</a>, <a href="https://www.patreon.com/cw/EvilCriz">Patreon</a><br>
+Помогите, пожалуйста, данному проекту: <a href="https://ko-fi.com/evilcriz">Ko-fi</a>, <a href="https://www.patreon.com/cw/EvilCriz">Patreon</a><br>
 
 - Благодаря вашей помощи я могу продолжать заниматься данным и другими проектами.<br>
 - Спасибо!<br>
