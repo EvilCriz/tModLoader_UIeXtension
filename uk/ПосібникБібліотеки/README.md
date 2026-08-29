@@ -1,6 +1,12 @@
 <h1 align="center"><a href="https://github.com/EvilCriz/tModLoader_UIeXtension/tree/main">tModLoader_UIeXtension</a></h1>
 
 <hr>
+
+Будь ласка, підтримайте цей проєкт: <a href="https://ko-fi.com/evilcriz">Ko-fi</a>, <a href="https://www.patreon.com/cw/EvilCriz">Patreon</a><br>
+
+- Завдяки вашій підтримці я можу продовжувати працювати над цим та іншими проєктами.<br>
+- Дякую!<br>
+
 <hr>
 
 <h1 align="center"><a href="Розділ-0">Розділ 0: Оновлення</a></h1>
