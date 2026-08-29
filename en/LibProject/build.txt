@@ -1,0 +1,3 @@
+displayName = UI Extension
+author = Evil Criz
+version = 1.0.0.1
