@@ -9,6 +9,14 @@
 - <a href="ExampleModUIeXtension">Вихідний код моду-прикладу</a>
   - Мод-приклад наразі перебуває у сирому вигляді. На даний момент у ньому зібрані лише UI з прикладів навчальних матеріалів.
 
+Будь ласка, підтримайте цей проєкт:
+
+<a href="https://ko-fi.com/evilcriz">Ko-fi</a>
+<a href="https://www.patreon.com/cw/EvilCriz">Patreon</a><br>
+
+Завдяки вашій підтримці я можу продовжувати працювати над цим та іншими проєктами.<br>
+Дякую!<br><br>
+
 # EN
 
 - <a href="en/LibTutorial/README.md">Tutorial materials</a>
