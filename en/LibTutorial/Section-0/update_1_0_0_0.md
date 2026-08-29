@@ -12,7 +12,7 @@
 
 Upon release to the library added:
 
-1. Classes. UI-elements (not builders):
+1. Classes UI-elements (not builders):
 - `UIExElement`.<br><br>
 <!-- -->
 
