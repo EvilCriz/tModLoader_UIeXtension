@@ -3,7 +3,7 @@
 ---
 
 * This is the library version from its first release.<br>
-* The library is currently in the Alpha development stage.<br>
+* The library is at the Alpha development stage.<br>
 * All tools are still being tested.
 
 ---
@@ -81,7 +81,7 @@ The following were added to the library upon release:
 
 <!-- -->
 
-7. Helper classes: **tModLoader** analogues:
+7. Helper classes: analogues of **tModLoader**:
 
 * `UIExModSystem`.<br><br>
 
@@ -111,31 +111,31 @@ Added articles:
 
 1. Section 1:
 
-* "Library Structure";
-* "The `UIExModSystem` Class";
-* "Style Structure";
-* "Additional Resources for Learning".<br><br>
+* «Library Structure»;
+* «The `UIExModSystem` Class»;
+* «Style Structure»;
+* «Additional Resources for Learning».<br><br>
 
 <!-- -->
 
 2. Section 2:
 
-* "The `UIExLayout` Class. Layout Basics";
-* "The `UIExCanvas` Class";
-* "The `UIExStackPanel` Class";
-* "The `UIExWrapPanel` Class";
-* "The `UIExDockPanel` Class";
-* "The `UIExGrid` Class";
-* "The `UIExUniformGrid` Class";
-* "Optimizing Layout Elements";
-* "The Lifecycle of Layout Elements";
-* "Recommendations for Creating Your Own Layout Containers".<br><br>
+* «The `UIExLayout` Class. Layout Basics»;
+* «The `UIExCanvas` Class»;
+* «The `UIExStackPanel` Class»;
+* «The `UIExWrapPanel` Class»;
+* «The `UIExDockPanel` Class»;
+* «The `UIExGrid` Class»;
+* «The `UIExUniformGrid` Class»;
+* «Optimizing Layout Elements»;
+* «The Lifecycle of Layout Elements»;
+* «Recommendations for Creating Your Own Layout Containers».<br><br>
 
 <!-- -->
 
 3. Section 3:
 
-* "The `UIExElement` Class" (not fully written yet. The `UIExElement` class is currently only partially implemented).<br><br>
+* «The `UIExElement` Class» (not fully written yet. The `UIExElement` class is currently only partially implemented).<br><br>
 
 ---
 
