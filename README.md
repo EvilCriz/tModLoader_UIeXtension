@@ -18,6 +18,21 @@
 - <a href="ExampleModUIeXtension">Example mod source code</a>
   - The example mod is currently in a raw state. At the moment, it only contains the UI from the tutorial examples.
 
+----
+
+Please consider supporting this project:
+
+* <a href="https://ko-fi.com/evilcriz">Ko-fi</a>
+* <a href="https://www.patreon.com/cw/EvilCriz">Patreon</a><br>
+
+Thanks to your support, I can continue working on this and other projects.<br>
+Thank you!<br><br>
+
+**Important!!** If you have any ties to the Russian Federation, supporting this project may be **dangerous for you**!<br>
+I live and reside in Ukraine.
+
+----
+
 # RU
 
 - <a href="ru/LibTutorial/README.md">Обучающие материалы</a>
