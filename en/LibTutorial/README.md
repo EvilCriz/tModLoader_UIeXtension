@@ -33,7 +33,7 @@ I live and reside in Ukraine.
 <h1 align="center"><a href="Section-2">Section 2: Composite elements</a></h1>
 
 <ul>
-  <li><a href="Section-2/2.1-UIExLayout.md">Part 1. «Class UIExLayoutThe basics of layout»</a></li>
+  <li><a href="Section-2/2.1-UIExLayout.md">Part 1. «Class UIExLayout. The basics of layout»</a></li>
   <li><a href="Section-2/2.2-UIExCanvas.md">Part 2. «Class UIExCanvas»</a></li>
   <li><a href="Section-2/2.3-UIExStackPanel.md">Part 3: «Class UIExStackPanel»</a></li>
   <li><a href="Section-2/2.4-UIExWrapPanel.md">Part 4: «Class UIExWrapPanel»</a></li>
