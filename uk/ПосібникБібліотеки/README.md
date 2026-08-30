@@ -30,7 +30,7 @@
 <h1 align="center"><a href="Розділ-2">Секція 2: Елементи компонування</a></h1>
 
 <ul>
-  <li><a href="Розділ-2/2.1-UIExLayout.md">Частина 1. «Клас UIExLayoutОснови макета»</a></li>
+  <li><a href="Розділ-2/2.1-UIExLayout.md">Частина 1. «Клас UIExLayout. Основи макета»</a></li>
   <li><a href="Розділ-2/2.2-UIExCanvas.md">Частина 2. «Клас UIExCanvas»</a></li>
   <li><a href="Розділ-2/2.3-UIExStackPanel.md">Частина 3: «Клас UIExStackPanel»</a></li>
   <li><a href="Розділ-2/2.4-UIExWrapPanel.md">Частина 4: «Клас UIExWrapPanel»</a></li>
