@@ -1,0 +1,4 @@
+displayName = [Alpha] Example Mod UIeXtension
+author = EvilCriz
+version = 1.0.0.1
+modReferences = UIeXtension@1.0.0.1

@@ -1,0 +1,20 @@
+**Example of using the mod-library: UIeXtension.**
+
+**About the UIeXtension mod:**
+
+UI Library.
+
+The library is currently unfinished and provides the following container layouts:
+Canvas (extended), StackPanel, WrapPanel, DockPanel, Grid, and UniformGrid.
+
+Alpha. The library has not been thoroughly tested yet.
+
+The library has a GitHub page (link in the mod description on Steam) containing:
+
+* Source code (with comments).
+* A detailed tutorial.
+* The source code of the example mod `ExampleModUIeXtension`.
+* Documentation will be added in the future.
+
+The commented source code and tutorial have been translated into English, Ukrainian, and Russian.
+Once the documentation is added, it will also be translated into all three languages.
