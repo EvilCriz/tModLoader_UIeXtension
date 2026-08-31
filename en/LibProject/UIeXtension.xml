@@ -1,0 +1,3099 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UIeXtension</name>
+    </assembly>
+    <members>
+        <member name="T:UIeXtension.MethodsExtensions.UIExUIElementExtensions">
+            <summary>
+                Adding methods of expansion to <see cref="T:Terraria.UI.UIElement"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.MethodsExtensions.UIExUIElementExtensions._styles">
+            <summary>
+                Styles are kept. <see cref="T:UIeXtension.Styles.StyleLayoutChild"/> Compound elements inside the container.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.MethodsExtensions.UIExUIElementExtensions.StyleLayoutChild(Terraria.UI.UIElement)">
+            <summary>
+                Extension method <see cref="T:Terraria.UI.UIElement"/>. 
+                Returns (creates if necessary) <see cref="T:UIeXtension.Styles.StyleLayoutChild"/> table <see cref="F:UIeXtension.MethodsExtensions.UIExUIElementExtensions._styles"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.MethodsExtensions.UIExUIElementExtensions.SetStyleLayoutChild(Terraria.UI.UIElement,UIeXtension.Styles.StyleLayoutChild)">
+            <summary>
+                Extension method <see cref="T:Terraria.UI.UIElement"/>. 
+                Setting the style <see cref="T:UIeXtension.Styles.StyleLayoutChild"/>
+            </summary>
+        </member>
+        <member name="T:UIeXtension.Enums.UIExOrientation">
+            <summary>
+                List of options for the current axis of the element
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExOrientation.Horizontal">
+            <remarks>Horizontal axis</remarks>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExOrientation.Vertical">
+            <remarks>Vertical axis</remarks>
+        </member>
+        <member name="T:UIeXtension.Enums.UIExAlignment">
+            <summary>
+                List of options for aligning the contents of the layout element
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExAlignment.Auto">
+            <remarks>
+                For containers, this value is similar. <see cref="F:UIeXtension.Enums.UIExAlignment.Start"/>
+                For nested elements, this will mean that the value of the linker is taken.
+             </remarks>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExAlignment.Start">
+            <remarks>Alignment of the contents along the starting edge (top/left depending on the current axis)</remarks>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExAlignment.Center">
+            <remarks>Alignment of contents with the centre</remarks>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExAlignment.End">
+            <remarks>Content alignment along the final edge (low/right depending on the current axis)</remarks>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExAlignment.Stretch">
+            <summary>Stretching of elements along the whole axis</summary>
+        </member>
+        <member name="T:UIeXtension.Enums.UIExSide">
+            <summary>
+                List of options for pointing to a particular side (the exact value depends on the linker)
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExSide.Left">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExSide.Right">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExSide.Top">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExSide.Bottom">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExSide.Fill">
+            <summary/>
+        </member>
+        <member name="T:UIeXtension.Enums.UIExGridLengthType">
+            <summary>
+                Type of row/column dimension <see cref="T:UIeXtension.UIExGridBase"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExGridLengthType.Pixels">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExGridLengthType.Precent">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExGridLengthType.Fraction">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Enums.UIExGridLengthType.Auto">
+            <summary/>
+        </member>
+        <member name="T:UIeXtension.Styles.UIExGridLength">
+            <summary>
+                Line/column size <see cref="T:UIeXtension.UIExGridBase"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.UIExGridLength.Type">
+            <summary>
+                Type of row/column dimension <see cref="T:UIeXtension.UIExGridBase"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.UIExGridLength.Pixels">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.UIExGridLength.Precent">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.UIExGridLength.Fraction">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExGridLength.#ctor(System.Single,UIeXtension.Enums.UIExGridLengthType)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExGridLength.SetSize(System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExGridLength.SetSize(System.Single,UIeXtension.Enums.UIExGridLengthType)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExGridLength.EqualsFields(UIeXtension.Styles.UIExGridLength)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExGridLength.FromPx(System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExGridLength.FromPr(System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExGridLength.FromFr(System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExGridLength.FromAuto">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExGridLength.Empty">
+            <summary/>
+        </member>
+        <member name="T:UIeXtension.Styles.UIExThickness">
+            <summary>
+                Describes the thickness of the indentations / boundaries separately for each of the four sides:
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.UIExThickness.Left">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.UIExThickness.Top">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.UIExThickness.Right">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.UIExThickness.Bottom">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExThickness.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExThickness.#ctor(System.Boolean,System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExThickness.#ctor(System.Boolean,System.Single,System.Single,System.Single,System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExThickness.SetPixels(System.Single,System.Single,System.Single,System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExThickness.SetPixels(System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExThickness.SetPrecent(System.Single,System.Single,System.Single,System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExThickness.SetPrecent(System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExThickness.Set(System.Boolean,System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExThickness.Set(System.Boolean,System.Single,System.Single,System.Single,System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.UIExThickness.EqualsFields(UIeXtension.Styles.UIExThickness)">
+            <summary/>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleLayoutChildCanvas">
+            <summary>
+                A class of styles that are common to all elements <see cref="T:Terraria.UI.UIElement"/>.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChildCanvas.Left">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChildCanvas.Top">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChildCanvas.Right">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChildCanvas.Bottom">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChildCanvas.AllowOverflowSelf">
+            <summary>
+                Indicates whether the element can go abroad <see cref="T:UIeXtension.UIExCanvas"/>
+                If the value is = null, takes the meaning from <see cref="F:UIeXtension.Styles.StyleLayoutContainerCanvas.AllowOverflow"/>.
+                By default: null
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildCanvas.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildCanvas.#ctor(Terraria.UI.StyleDimension,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension,System.Nullable{System.Boolean})">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildCanvas.Set(Terraria.UI.StyleDimension,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension,System.Nullable{System.Boolean})">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.StyleLayoutChildCanvas"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildCanvas.SetAllFields(Terraria.UI.StyleDimension,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension,System.Nullable{System.Boolean})">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildCanvas.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildCanvas.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildCanvas.Copy(UIeXtension.Styles.StyleLayoutChildCanvas)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.StyleLayoutChildCanvas"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildCanvas.GetCopy">
+            <summary>
+                Creates and returns a copy of the current <see cref="T:UIeXtension.Styles.StyleLayoutChildCanvas"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildCanvas.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleLayoutContainerCanvas">
+            <summary>
+                Style of layout for <see cref="T:UIeXtension.UIExCanvas"/> 
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerCanvas.AllowOverflow">
+            <summary>
+                Indicates whether the element can go abroad <see cref="T:UIeXtension.UIExCanvas"/>
+                By default: false
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerCanvas.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerCanvas.#ctor(System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerCanvas.Set(System.Boolean)">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.StyleLayoutContainerCanvas"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerCanvas.SetAllFields(System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerCanvas.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerCanvas.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerCanvas.Copy(UIeXtension.Styles.StyleLayoutContainerCanvas)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.StyleLayoutContainerCanvas"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerCanvas.GetCopy">
+            <summary>
+                Creates and returns a copy of the current <see cref="T:UIeXtension.Styles.StyleLayoutContainerCanvas"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerCanvas.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleLayoutChildDockPanel">
+            <summary>
+                A class of styles that are common to all elements <see cref="T:Terraria.UI.UIElement"/>.
+            </summary>using System.Collections.Generic;
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChildDockPanel.Side">
+            <summary>
+                The party to which the child element is pressed. 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildDockPanel.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildDockPanel.#ctor(UIeXtension.Enums.UIExSide)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildDockPanel.Set(UIeXtension.Enums.UIExSide)">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.StyleLayoutChildDockPanel"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildDockPanel.SetAllFields(UIeXtension.Enums.UIExSide)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildDockPanel.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildDockPanel.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildDockPanel.Copy(UIeXtension.Styles.StyleLayoutChildDockPanel)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.StyleLayoutChildDockPanel"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildDockPanel.GetCopy">
+            <summary>
+                Creates and returns a copy of the current <see cref="T:UIeXtension.Styles.StyleLayoutChildDockPanel"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildDockPanel.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleLayoutContainerDockPanel">
+            <summary>
+                Style of layout for <see cref="T:UIeXtension.UIExDockPanel"/> 
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerDockPanel.SideLeft">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerDockPanel.SideRight">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerDockPanel.SideTop">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerDockPanel.SideBottom">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerDockPanel.SideFill">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerDockPanel.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerDockPanel.#ctor(UIeXtension.Styles.StyleSide,UIeXtension.Styles.StyleSide,UIeXtension.Styles.StyleSide,UIeXtension.Styles.StyleSide,UIeXtension.Styles.StyleSide)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerDockPanel.Set(UIeXtension.Styles.StyleSide,UIeXtension.Styles.StyleSide,UIeXtension.Styles.StyleSide,UIeXtension.Styles.StyleSide,UIeXtension.Styles.StyleSide)">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.StyleLayoutContainerDockPanel"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerDockPanel.SetAllFields(UIeXtension.Styles.StyleSide,UIeXtension.Styles.StyleSide,UIeXtension.Styles.StyleSide,UIeXtension.Styles.StyleSide,UIeXtension.Styles.StyleSide)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerDockPanel.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerDockPanel.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerDockPanel.Copy(UIeXtension.Styles.StyleLayoutContainerDockPanel)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.StyleLayoutContainerDockPanel"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerDockPanel.GetCopy">
+            <summary>
+                Creates and returns a copy of the current <see cref="T:UIeXtension.Styles.StyleLayoutContainerDockPanel"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerDockPanel.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleSide">
+            <summary>
+                Side information, used by the builder and his styles.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleSide.Padding">
+            <summary>
+                Internal areas of the side.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleSide.JustifyContent">
+            <summary>
+                The alignment of the element along the main axis of the side.
+                The main axis for the left/right side is vertical.
+                The main axis for the upper/lower side is horizontal.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleSide.AlignItems">
+            <summary>
+                The alignment of the element along the main axis of the side.
+                The main axis for the left/right side is vertical.
+                The main axis for the upper/lower side is horizontal.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleSide.Spacing">
+            <summary>
+                The distance between the elements on this side.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleSide.Reverse">
+            <summary>
+                Should the elements be arranged in an inverted order in this line?
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleSide.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleSide.#ctor(UIeXtension.Styles.UIExThickness,UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment,Terraria.UI.StyleDimension,System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleSide.Set(UIeXtension.Styles.UIExThickness,UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment,Terraria.UI.StyleDimension,System.Boolean)">
+            <summary>
+                It assumes all possible values of this class.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleSide.SetAllFields(UIeXtension.Styles.UIExThickness,UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment,Terraria.UI.StyleDimension,System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleSide.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleSide.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleSide.Copy(UIeXtension.Styles.StyleSide)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.StyleSide"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleSide.GetCopy">
+            <summary>
+                Creates and returns a copy of the current <see cref="T:UIeXtension.Styles.StyleSide"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleSide.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleLayoutChildGrid">
+            <summary>
+                Styles of layout for <see cref="T:UIeXtension.UIExGridBase"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChildGrid.Row">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChildGrid.Column">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChildGrid.RowSpan">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChildGrid.ColumnSpan">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildGrid.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildGrid.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildGrid.Set(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.StyleLayoutChildGrid"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildGrid.SetAllFields(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildGrid.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildGrid.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildGrid.Copy(UIeXtension.Styles.StyleLayoutChildGrid)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.StyleLayoutChildGrid"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildGrid.GetCopy">
+            <summary>
+                Creates and returns a copy of the current <see cref="T:UIeXtension.Styles.StyleLayoutChildGrid"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildGrid.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleLayoutContainerGrid">
+            <summary>
+                Container layout style <see cref="T:UIeXtension.UIExGrid"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerGrid.RowsDefinitions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerGrid.ColumnsDefinitions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerGrid.RowsSpace">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerGrid.ColumnsSpace">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerGrid.RowsAlignment">
+            <summary>
+                Grid alignment on the main axis.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerGrid.ColumnsAlignment">
+            <summary>
+            Grid alignment along the transverse axis.
+            </summary>
+        </member>
+        <member name="P:UIeXtension.Styles.StyleLayoutContainerGrid.RowsCount">
+            <summary/>
+        </member>
+        <member name="P:UIeXtension.Styles.StyleLayoutContainerGrid.ColumnsCount">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.#ctor(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.AddRowDefinition(UIeXtension.Styles.UIExGridLength)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.AddRowDefinition(UIeXtension.Styles.UIExGridLength,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.AddRowDefinitions(UIeXtension.Styles.UIExGridLength[])">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.AddRowDefinitions(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength})">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.AddColumnDefinition(UIeXtension.Styles.UIExGridLength)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.AddColumnDefinition(UIeXtension.Styles.UIExGridLength,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.AddColumnDefinitions(UIeXtension.Styles.UIExGridLength[])">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.AddColumnDefinitions(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength})">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.AddDefinitions(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},UIeXtension.Styles.UIExGridLength,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.AddDefinitions(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},UIeXtension.Styles.UIExGridLength[])">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.AddDefinitions(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength})">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.GetRowDefinition(System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.GetRowDefinitions(System.Int32,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.GetColumnDefinition(System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.GetColumnDefinitions(System.Int32,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.GetDefinition(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.GetDefinitions(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},System.Int32,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.RemoveRowDefinitionAt(System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.RemoveRowDefinitionsRange(System.Int32,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.RemoveColumnDefinitionsAt(System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.RemoveColumnDefinitionsRange(System.Int32,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.RemoveDefinitionAt(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.RemoveDefinitionsRange(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},System.Int32,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.ReplaceRowDefinition(System.Int32,UIeXtension.Styles.UIExGridLength)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.ReplaceColumnDefinition(System.Int32,UIeXtension.Styles.UIExGridLength)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.ReplaceDefinition(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},System.Int32,UIeXtension.Styles.UIExGridLength)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.InsertRowDefinition(System.Int32,UIeXtension.Styles.UIExGridLength)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.InsertRowDefinitions(System.Int32,UIeXtension.Styles.UIExGridLength[])">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.InsertRowDefinitions(System.Int32,System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength})">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.InsertColumnDefinition(System.Int32,UIeXtension.Styles.UIExGridLength)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.InsertColumnDefinitions(System.Int32,UIeXtension.Styles.UIExGridLength[])">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.InsertColumnDefinitions(System.Int32,System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength})">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.InsertDefinitions(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},System.Int32,UIeXtension.Styles.UIExGridLength[])">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.InsertDefinitions(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},System.Int32,System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength})">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.Set(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension)">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.StyleLayoutContainerGrid"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.SetAllFields(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.Copy(UIeXtension.Styles.StyleLayoutContainerGrid)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.GetCopy">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerGrid.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleLayoutChildUniformGrid">
+            <summary>
+                Styles of layout for <see cref="T:UIeXtension.UIExGridBase"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChildUniformGrid.RowSpan">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChildUniformGrid.ColumnSpan">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildUniformGrid.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildUniformGrid.#ctor(System.Int32,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildUniformGrid.Set(System.Int32,System.Int32)">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.StyleLayoutChildUniformGrid"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildUniformGrid.SetAllFields(System.Int32,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildUniformGrid.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildUniformGrid.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildUniformGrid.Copy(UIeXtension.Styles.StyleLayoutChildUniformGrid)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.StyleLayoutChildUniformGrid"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildUniformGrid.GetCopy">
+            <summary>
+                Creates and returns a copy of the current <see cref="T:UIeXtension.Styles.StyleLayoutChildUniformGrid"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChildUniformGrid.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleLayoutContainerUniformGrid">
+            <summary>
+                Container layout style <see cref="T:UIeXtension.UIExUniformGrid"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerUniformGrid.RowsSpace">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerUniformGrid.ColumnsSpace">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerUniformGrid.RowsAlignment">
+            <summary>
+                Grid alignment on the main axis.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerUniformGrid.ColumnsAlignment">
+            <summary>
+            Grid alignment along the transverse axis.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerUniformGrid.RowsCount">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerUniformGrid.ColumnsCount">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerUniformGrid.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerUniformGrid.#ctor(System.Int32,System.Int32,UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerUniformGrid.Set(System.Int32,System.Int32,UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension)">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.StyleLayoutContainerUniformGrid"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerUniformGrid.SetAllFields(System.Int32,System.Int32,UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerUniformGrid.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerUniformGrid.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerUniformGrid.Copy(UIeXtension.Styles.StyleLayoutContainerUniformGrid)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerUniformGrid.GetCopy">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerUniformGrid.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleLayoutChild">
+            <summary>
+                A class of styles that are common to all elements <see cref="T:Terraria.UI.UIElement"/>.
+            </summary>
+            <remarks>
+                Styles apply only to nested <see cref="T:Terraria.UI.UIElement"/> daughter-class <see cref="T:UIeXtension.UIExLayout"/>
+            </remarks>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChild.JustifySelf">
+            <summary>
+                Determines the starting point of the layout <see cref="T:UIeXtension.UIExLayout"/> relative to the main axis.
+                <para>meaning <see cref="F:UIeXtension.Enums.UIExAlignment.Auto"/> elemental 
+                <see cref="F:UIeXtension.Styles.StyleLayoutContainer.JustifyContent"/> builder.</para>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChild.AlignSelf">
+            <summary>
+                Determines the starting point of the layout <see cref="T:UIeXtension.UIExLayout"/> relative to the transverse axis.
+                <para>meaning <see cref="F:UIeXtension.Enums.UIExAlignment.Auto"/> elemental 
+                <see cref="F:UIeXtension.Styles.StyleLayoutContainer.AlignItems"/> builder.</para>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChild.Margin">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChild.WithoutLayout">
+            <summary>
+                A flag indicating that the item should not be included in the layout <see cref="T:UIeXtension.UIExLayout"/>. 
+                Even if it is a daughter element of the layout class.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChild.Width">
+            <summary>
+                This value is used only by the linkers of this library for the elements embedded in them.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChild.Height">
+            <summary>
+                This value is used only by the linkers of this library for the elements embedded in them.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.#ctor(UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment,UIeXtension.Styles.UIExThickness,System.Boolean,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.Set(UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment,UIeXtension.Styles.UIExThickness,System.Boolean,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension)">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.StyleLayoutChild"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.SetAllFields(UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment,UIeXtension.Styles.UIExThickness,System.Boolean,Terraria.UI.StyleDimension,Terraria.UI.StyleDimension)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.Copy(UIeXtension.Styles.StyleLayoutChild)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.StyleLayoutChild"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.GetCopy">
+            <summary>
+                Creates and returns a copy of the current <see cref="T:UIeXtension.Styles.StyleLayoutChild"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutChild._styles">
+            <summary>
+                Stores other styles of layout of elements inside the container, data library or custom.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.Canvas">
+            <summary>
+                Returns (creates before this, if necessary) the layout style for <see cref="T:UIeXtension.UIExStackPanel"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.DockPanel">
+            <summary>
+                Returns (creates before this, if necessary) the layout style for <see cref="T:UIeXtension.UIExDockPanel"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.Grid">
+            <summary>
+                Returns (creates before this, if necessary) the layout style for <see cref="T:UIeXtension.UIExGrid"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.UniformGrid">
+            <summary>
+                Returns (creates before this, if necessary) the layout style for <see cref="T:UIeXtension.UIExUniformGrid"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.GetOrCreateStyle``1">
+            <summary>
+                Returns (creates before this, if necessary) the transferred style of arrangement of elements inside the container
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.CopyInnerStylesBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutChild.EqualsInnerStylesFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleLayoutContainer">
+            <summary>
+                Basic layout style for all elements-components 
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainer.Orientation">
+            <summary>
+                Defines the axis of the container <see cref="T:UIeXtension.UIExStackPanel"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainer.JustifyContent">
+            <summary>
+                Determines the starting point of the layout <see cref="T:UIeXtension.UIExLayout"/> relative to the main axis.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainer.AlignItems">
+            <summary>
+                Determines the starting point of the layout <see cref="T:UIeXtension.UIExLayout"/> relative to the transverse axis.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.#ctor(UIeXtension.Enums.UIExOrientation,UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.Set(UIeXtension.Enums.UIExOrientation,UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment)">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.StyleLayoutContainer"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.SetAllFields(UIeXtension.Enums.UIExOrientation,UIeXtension.Enums.UIExAlignment,UIeXtension.Enums.UIExAlignment)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.Copy(UIeXtension.Styles.StyleLayoutContainer)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.StyleLayoutContainer"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.GetCopy">
+            <summary>
+                Creates and returns a copy of the current <see cref="T:UIeXtension.Styles.StyleLayoutContainer"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainer._styles">
+            <summary>
+                Stores other container layout styles, library data or custom styles.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.Canvas">
+            <summary>
+                Returns (creates before this, if necessary) the layout style for <see cref="T:UIeXtension.UIExCanvas"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.StackPanel">
+            <summary>
+                Returns (creates before this, if necessary) the layout style for <see cref="T:UIeXtension.UIExStackPanel"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.DockPanel">
+            <summary>
+                Returns (creates before this, if necessary) the layout style for <see cref="T:UIeXtension.UIExDockPanel"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.WrapPanel">
+            <summary>
+                Returns (creates before this, if necessary) the layout style for <see cref="T:UIeXtension.UIExWrapPanel"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.Grid">
+            <summary>
+                Returns (creates before this, if necessary) the layout style for <see cref="T:UIeXtension.UIExGrid"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.UniformGrid">
+            <summary>
+                Returns (creates before this, if necessary) the layout style for <see cref="T:UIeXtension.UIExUniformGrid"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.GetOrCreateStyle``1">
+            <summary>
+                Returns (creates before this, if necessary) the transferred layout style
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.CopyInnerStylesBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainer.EqualsInnerStylesFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleLayoutContainerStackPanel">
+            <summary>
+                Basic layout style for <see cref="T:UIeXtension.UIExStackPanel"/> and all heirs
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerStackPanel.Spacing">
+            <summary>
+                Determine the indentation between the elements in <see cref="T:UIeXtension.UIExStackPanel"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerStackPanel.Reverse">
+            <summary>
+                A flag indicating that the elements are inside <see cref="T:UIeXtension.UIExStackPanel"/> They should be placed in reverse order.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerStackPanel.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerStackPanel.#ctor(Terraria.UI.StyleDimension,System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerStackPanel.Set(Terraria.UI.StyleDimension,System.Boolean)">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.StyleLayoutContainerStackPanel"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerStackPanel.SetAllFields(Terraria.UI.StyleDimension,System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerStackPanel.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerStackPanel.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerStackPanel.Copy(UIeXtension.Styles.StyleLayoutContainerStackPanel)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.StyleLayoutContainerStackPanel"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerStackPanel.GetCopy">
+            <summary>
+                Creates and returns a copy of the current <see cref="T:UIeXtension.Styles.StyleLayoutContainerStackPanel"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerStackPanel.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleLayoutContainerWrapPanel">
+            <summary>
+                Basic layout style for <see cref="T:UIeXtension.UIExWrapPanel"/> and all heirs
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerWrapPanel.SpacingWithinLine">
+            <summary>
+                Determine the indentation between the elements in <see cref="T:UIeXtension.UIExWrapPanel"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerWrapPanel.SpacingBetweenLines">
+            <summary>
+                Determine the indentation between the lines in <see cref="T:UIeXtension.UIExWrapPanel"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerWrapPanel.AlignLines">
+            <summary>
+                Line alignment when transferring content.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerWrapPanel.ReverseWithinLine">
+            <summary>
+                A flag indicating that the elements within each line <see cref="T:UIeXtension.UIExWrapPanel"/> They should be placed in reverse order.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleLayoutContainerWrapPanel.ReverseAll">
+            <summary>
+                A flag indicating that all elements <see cref="T:UIeXtension.UIExWrapPanel"/> They should be placed in reverse order.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerWrapPanel.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerWrapPanel.#ctor(Terraria.UI.StyleDimension,Terraria.UI.StyleDimension,UIeXtension.Enums.UIExAlignment,System.Boolean,System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerWrapPanel.Set(Terraria.UI.StyleDimension,Terraria.UI.StyleDimension,UIeXtension.Enums.UIExAlignment,System.Boolean,System.Boolean)">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.StyleLayoutContainerWrapPanel"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerWrapPanel.SetAllFields(Terraria.UI.StyleDimension,Terraria.UI.StyleDimension,UIeXtension.Enums.UIExAlignment,System.Boolean,System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerWrapPanel.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerWrapPanel.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerWrapPanel.Copy(UIeXtension.Styles.StyleLayoutContainerWrapPanel)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.StyleLayoutContainerWrapPanel"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerWrapPanel.GetCopy">
+            <summary>
+                Creates and returns a copy of the current <see cref="T:UIeXtension.Styles.StyleLayoutContainerWrapPanel"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleLayoutContainerWrapPanel.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.Base.StyleBase">
+            <summary>
+                Basic class for all style classes
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.Base.StyleBase.Fabricate">
+            <summary>
+                Creates a copy of the heir <see cref="T:UIeXtension.Styles.Base.StyleBase"/>. 
+                Used in the method <see cref="M:UIeXtension.Styles.Base.StyleBase.GetCopyBase"/>which returns the type <see cref="T:UIeXtension.Styles.Base.StyleBase"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.Base.StyleBase.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.Base.StyleBase"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.Base.StyleBase.CopyInnerStylesBase(UIeXtension.Styles.Base.StyleBase)">
+            <summary>
+                Copying registered styles.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.Base.StyleBase.GetCopyBase``1">
+            <summary>
+                Creates and returns a copy of the heir <see cref="T:UIeXtension.Styles.Base.StyleBase"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.Base.StyleBase.GetCopyBase">
+            <summary>
+                Creates and returns a copy of the current heir <see cref="T:UIeXtension.Styles.Base.StyleBase"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.Base.StyleBase.EqualsStylesFields(UIeXtension.Styles.Base.StyleBase)">
+            <summary>
+                Checks whether all the values of all styles are the same for the current and transmitted element
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.Base.StyleBase.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <summary>
+                Checks whether the properties of the current and transmitted element are the same
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.Base.StyleBase.EqualsInnerStylesFields``1(System.Collections.Generic.Dictionary{System.Type,``0},System.Collections.Generic.Dictionary{System.Type,``0})">
+            <summary>
+                Checks whether the styles of the current and transferred element match
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.Base.StyleBase.EqualsInnerStylesFields(UIeXtension.Styles.Base.StyleBase)">
+            <summary>
+                Checks whether the styles of the current and transferred element match
+            </summary>
+        </member>
+        <member name="T:UIeXtension.Styles.Base.StyleLayoutChildBase">
+            <summary>
+                Basic class for all layout styles of an individual element.
+            </summary>
+        </member>
+        <member name="T:UIeXtension.Styles.Base.StyleLayoutContainerBase">
+            <summary>
+                This class inherits all container layout styles.
+            </summary>
+        </member>
+        <member name="T:UIeXtension.Styles.Base.StyleTmlBase">
+            <summary>
+                Basic class for all styles tModLoader.
+            </summary>
+        </member>
+        <member name="T:UIeXtension.Styles.Base.StyleVisualBase">
+            <summary>
+                Basic class for all visual display styles
+            </summary>
+        </member>
+        <member name="T:UIeXtension.Styles.StyleVisualElement">
+            <summary>
+                Style table, which contains all UIElements of this library
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleVisualElement.tModLoaderStyle">
+            <summary>
+                Indicates that the basic style settings of this visual element
+                must be similar <see cref="T:Terraria.GameContent.UI.Elements.UIPanel"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleVisualElement.PaddingAutoControl">
+            <summary>
+                Indicates whether the element should automatically control the values:
+                <see cref="F:Terraria.UI.UIElement.PaddingTop"/>
+                <see cref="F:Terraria.UI.UIElement.PaddingLeft"/>
+                <see cref="F:Terraria.UI.UIElement.PaddingBottom"/>
+                <see cref="F:Terraria.UI.UIElement.PaddingRight"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.#ctor(System.Boolean,System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.Set(System.Boolean,System.Boolean)">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.StyleVisualElement"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.SetAllFields(System.Boolean,System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.Copy(UIeXtension.Styles.StyleVisualElement)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.StyleVisualElement"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.GetCopy">
+            <summary>
+                Creates and returns a copy of the current <see cref="T:UIeXtension.Styles.StyleVisualElement"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleVisualElement._styles">
+            <summary>
+                Stores other styles of visual display of elements, library data or user-generated.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.StyleVisualElement._stylesTML">
+            <summary>
+                Stores styles of visual display of elements with a visual part similar to one of the UI component tModLoader. 
+                This library or user-generated library.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.GetOrCreateStyle``1">
+            <summary>
+                Returns (creates before this, if necessary) the transferred style of the visual display of the element
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.GetOrCreateStyleTML``1">
+            <summary>
+                Returns (creates before this, if necessary) the transferred style of the visual display of the element TML
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.TmlUIPanel">
+            <summary>
+                Returns (creates before this, if necessary) the style of visual display of the element. 
+                By default, similar: <see cref="T:Terraria.GameContent.UI.Elements.UIPanel"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.CopyInnerStylesBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.StyleVisualElement.EqualsInnerStylesFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.Styles.TModLoader.StyleTmlUIPanel">
+            <summary>
+                Visual display style class tModLoader <see cref="T:Terraria.GameContent.UI.Elements.UIPanel"/>;
+            </summary>
+        </member>
+        <member name="F:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.CornerSize">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.BarSize">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.BorderTexture">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.BackgroundTexture">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.BorderColor">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.BackgroundColor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.#ctor(System.Int32,System.Int32,ReLogic.Content.Asset{Microsoft.Xna.Framework.Graphics.Texture2D},ReLogic.Content.Asset{Microsoft.Xna.Framework.Graphics.Texture2D},System.Nullable{Microsoft.Xna.Framework.Color},System.Nullable{Microsoft.Xna.Framework.Color})">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.Set(System.Int32,System.Int32,ReLogic.Content.Asset{Microsoft.Xna.Framework.Graphics.Texture2D},ReLogic.Content.Asset{Microsoft.Xna.Framework.Graphics.Texture2D},System.Nullable{Microsoft.Xna.Framework.Color},System.Nullable{Microsoft.Xna.Framework.Color})">
+            <summary>
+                Requires to convey all possible class values <see cref="T:UIeXtension.Styles.TModLoader.StyleTmlUIPanel"/> and sets them up.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.SetAllFields(System.Int32,System.Int32,ReLogic.Content.Asset{Microsoft.Xna.Framework.Graphics.Texture2D},ReLogic.Content.Asset{Microsoft.Xna.Framework.Graphics.Texture2D},System.Nullable{Microsoft.Xna.Framework.Color},System.Nullable{Microsoft.Xna.Framework.Color})">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.Fabricate">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.CopyBase(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.Copy(UIeXtension.Styles.TModLoader.StyleTmlUIPanel)">
+            <summary>
+                Copy the values of the transmitted <see cref="T:UIeXtension.Styles.TModLoader.StyleTmlUIPanel"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.GetCopy">
+            <summary>
+                Creates and returns a copy of the current <see cref="T:UIeXtension.Styles.TModLoader.StyleTmlUIPanel"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Styles.TModLoader.StyleTmlUIPanel.EqualsFields(UIeXtension.Styles.Base.StyleBase)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.UIExModSystem`1">
+            <summary>
+                An auxiliary class designed to simplify the creation of a basic implementation ModSystem. 
+                required to create a user interface.
+            </summary>
+            <typeparam name="TUIState">
+                UIStateThe life cycle of which this class will govern
+            </typeparam>
+        </member>
+        <member name="P:UIeXtension.UIExModSystem`1.State">
+            <summary>
+                User object UIState
+            </summary>
+        </member>
+        <member name="P:UIeXtension.UIExModSystem`1.InterfaceState">
+            <summary>
+                Manages updating and rendering <see cref="P:UIeXtension.UIExModSystem`1.State"/>
+            </summary>
+        </member>
+        <member name="P:UIeXtension.UIExModSystem`1.LastState">
+            <summary>
+                Keeps the last fortune. <see cref="P:UIeXtension.UIExModSystem`1.State"/> / <see cref="P:UIeXtension.UIExModSystem`1.InterfaceState"/> (displayed/hidden)
+            </summary>
+        </member>
+        <member name="P:UIeXtension.UIExModSystem`1.InterfaceLayerName">
+            <summary>
+                Stores the value used in <see cref="M:UIeXtension.UIExModSystem`1.ModifyInterfaceLayers(System.Collections.Generic.List{Terraria.UI.GameInterfaceLayer})"/>
+            </summary>
+        </member>
+        <member name="P:UIeXtension.UIExModSystem`1.InterfaceLayerDescription">
+            <summary>
+                Stores the value used in <see cref="M:UIeXtension.UIExModSystem`1.ModifyInterfaceLayers(System.Collections.Generic.List{Terraria.UI.GameInterfaceLayer})"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExModSystem`1.SetState(System.Boolean)">
+            <summary>
+                Allows you to set the state (displayed / hidden) of the user interface
+            </summary>
+            <param name="state">
+                New state (displayed/hidden) of the user interface
+            </param>
+        </member>
+        <member name="M:UIeXtension.UIExModSystem`1.SwitchState">
+            <summary>
+                It changes the state of the user interface. If it's displayed, it hides; if it's hidden, it displays.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExModSystem`1.Show">
+            <summary>
+                It displays the user interface if it is hidden.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExModSystem`1.Hide">
+            <summary>
+                Hide the user interface if it is displayed.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExModSystem`1.GetState">
+            <summary>
+                Returns the fortune <see cref="P:UIeXtension.UIExModSystem`1.State"/> (hidden/displayed)
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExModSystem`1.GetUIState">
+            <summary>
+                Returns. <see cref="P:UIeXtension.UIExModSystem`1.State"/>. 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExModSystem`1.SetUIState(`0)">
+            <summary>
+                Allows you to ask directly. <typeparamref name="TUIState"/> The user interface.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExModSystem`1.Load">
+            <summary>
+                Basic implementation <see cref="T:Terraria.ModLoader.ModSystem"/> loader
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExModSystem`1.UpdateUI(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+                Basic implementation <see cref="T:Terraria.ModLoader.ModSystem"/> to update the user interface
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExModSystem`1.ModifyInterfaceLayers(System.Collections.Generic.List{Terraria.UI.GameInterfaceLayer})">
+            <summary>
+                Basic implementation <see cref="T:Terraria.ModLoader.ModSystem"/> user interface
+            </summary>
+        </member>
+        <member name="T:UIeXtension.RectangleLayoutContext">
+            <summary>
+            Structure for storing coordinates of the layout area and its index
+            </summary>
+        </member>
+        <member name="F:UIeXtension.RectangleLayoutContext.Index">
+            <summary>
+                Current area index of a specific container layout
+            </summary>
+        </member>
+        <member name="F:UIeXtension.RectangleLayoutContext.Top">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.RectangleLayoutContext.Left">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.RectangleLayoutContext.Width">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.RectangleLayoutContext.Height">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.RectangleLayoutContext.#ctor(System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.RectangleLayoutContext.#ctor(System.Int32,Terraria.UI.UIElement,Terraria.UI.CalculatedStyle)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.RectangleLayoutContext.GetCalculatedStyle">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.RectangleLayoutContext.GetLayoutDebugRectangle">
+            <summary/>
+        </member>
+        <member name="T:UIeXtension.UIExCanvas">
+            <summary>
+                Allows you to set absolute positioning according to specified parameters.
+            </summary>
+            <summary>
+                Allows you to set absolute positioning according to specified parameters.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.#ctor(UIeXtension.Styles.StyleVisualElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.#ctor(UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.#ctor(UIeXtension.Styles.StyleVisualElement,UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.UIExCanvas.UIExCanvasContext">
+            <summary>
+                Class containing temporary information about the current layout <see cref="T:UIeXtension.UIExCanvas"/>.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExCanvas.UIExCanvasContext.vertical">
+            <summary>
+                Current orientation of the main axis.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExCanvas.UIExCanvasContext.justifyOffsets">
+            <summary>
+                Departures of elements along the main axis.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExCanvas.UIExCanvasContext.alignOffsets">
+            <summary>
+                Detachments of elements along the transverse axis.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExCanvas.UIExCanvasContext.styleLayoutContainer">
+            <summary>
+                Final style <see cref="T:UIeXtension.UIExCanvas"/>, used in the context of this arrangement of elements.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExCanvas._styleChildCanvasContexts">
+            <summary>
+                Stores all the styles of the child elements involved in the layout.  
+                Relevant only during the life cycle of the layout.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExCanvas._context">
+            <summary>
+                Temporary layout information. Only relevant during the layout life cycle.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.BeginLayoutContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.EndLayoutContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.RefreshLayout">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.CalculateAlignmentOffsets">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.GetAlignmentOffset(System.Boolean,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.SetPosition(System.Int32,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.TrySetStretchSize(System.Int32,System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.SetNoStretchSize(System.Int32,System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.Truncate(System.Int32,System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExCanvas.GetAllowOverflow(System.Int32)">
+            <summary/>
+        </member>
+        <member name="T:UIeXtension.UIExDockPanel">
+            <summary>
+                Component. 
+                Allows you to tie child elements to one of its edges (top, bottom, left or right side)
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.CaluclateSideDimensions">
+            <summary>
+                He counts. <see cref="T:Terraria.UI.CalculatedStyle"/> on all sides.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.GetSideWithPadding(Terraria.UI.CalculatedStyle,UIeXtension.Styles.UIExThickness)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.GetAndConsumeSideDimensions(UIeXtension.Enums.UIExSide,System.Single)">
+            <summary>
+                Calculates the size and position of the transferred side.
+                The offset is changed for the following parties.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.GetMaxSize(System.Collections.Generic.List{System.Int32},System.Boolean,UIeXtension.Styles.UIExThickness)">
+            <summary>
+                Returns the maximum specified size of the transferred elements.
+                Adds to the size of the Padding relevant parties.
+                Using an off-life-cycle layout will result in exclusion.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.#ctor(UIeXtension.Styles.StyleVisualElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.#ctor(UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.#ctor(UIeXtension.Styles.StyleVisualElement,UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.UIExDockPanel.UIExDockPanelContext">
+            <summary>
+                Class containing temporary information about the current layout <see cref="T:UIeXtension.UIExDockPanel"/>.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.styleLayoutContainer">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.remainingDimensions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.leftInnerDimensions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.rightInnerDimensions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.topInnerDimensions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.bottomInnerDimensions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.fillInnerDimensions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.leftOuterDimensions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.rightOuterDimensions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.topOuterDimensions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.bottomOuterDimensions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.fillOuterDimensions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.leftElementsIdx">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.rightElementsIdx">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.topElementsIdx">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.bottomElementsIdx">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.fillElementsIdx">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.sideOrder">
+            <summary>
+                The allocation of space for the parties.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.SideJustifyContent">
+            <summary>
+                Alignment along the main axis of the elements in this side.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel.UIExDockPanelContext.SideAlignItems">
+            <summary>
+                Alignment along the transverse axis of the elements in this side.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExDockPanel._context">
+            <summary>
+                Temporary layout information. Only relevant during the layout life cycle.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.BeginLayoutContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.EndLayoutContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.RefreshLayout">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.RefreshLayoutSide(System.Collections.Generic.List{System.Int32},Terraria.UI.CalculatedStyle,System.Boolean,UIeXtension.Styles.StyleSide)">
+            <summary>
+                Composition of elements in a particular line
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.GetSideJustifyContent(UIeXtension.Styles.StyleSide)">
+            <summary>
+                Returns the alignment on the main axis, not taking into account JustifySelf nested elements.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.SetElementOffsetBySide(System.Collections.Generic.List{System.Int32},Terraria.UI.CalculatedStyle)">
+            <summary>
+                It shifts the element to the position of its side.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.GetJustify(System.Int32)">
+            <summary>
+                Defines <see cref="T:UIeXtension.Enums.UIExAlignment"/> on the main axis.
+                <para>
+                    If the nested element positions itself, its positioning returns: <see cref="F:UIeXtension.Styles.StyleLayoutChild.JustifySelf"/>.
+                    Otherwise, if a party positions the elements inside, it returns its positioning: <see cref="F:UIeXtension.Styles.StyleSide.JustifyContent"/>
+                    Otherwise, returns the positioning of the container layout: <see cref="F:UIeXtension.Styles.StyleLayoutContainer.JustifyContent"/>
+                </para>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.GetAlign(System.Int32)">
+            <summary>
+                Defines <see cref="T:UIeXtension.Enums.UIExAlignment"/> transverse axis.
+                <para>
+                    If the nested element positions itself, its positioning returns: <see cref="F:UIeXtension.Styles.StyleLayoutChild.AlignSelf"/>. 
+                    Otherwise, if a party positions the elements inside, it returns its positioning: <see cref="F:UIeXtension.Styles.StyleSide.JustifyContent"/>
+                    Otherwise, returns the positioning of the container layout: <see cref="F:UIeXtension.Styles.StyleLayoutContainer.AlignItems"/>
+                </para>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExDockPanel.RefreshLayoutDebugLines">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.UIExFlowPanel">
+            <summary>
+                Basic class for <see cref="T:UIeXtension.UIExStackPanel"/>. <see cref="T:UIeXtension.UIExDockPanel"/>. <see cref="T:UIeXtension.UIExWrapPanel"/>
+            </summary>
+            <summary>
+                Basic class for <see cref="T:UIeXtension.UIExStackPanel"/>. <see cref="T:UIeXtension.UIExDockPanel"/>. <see cref="T:UIeXtension.UIExWrapPanel"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.#ctor(UIeXtension.Styles.StyleVisualElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.#ctor(UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.#ctor(UIeXtension.Styles.StyleVisualElement,UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.UIExFlowPanel.UIExFlowPanelContext">
+            <summary>
+                Class containing temporary information about the current layout <see cref="T:UIeXtension.UIExFlowPanel"/>.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExFlowPanel.UIExFlowPanelContext.vertical">
+            <summary>
+                A flag indicating the current main axis. 
+                Reduced conservation <see cref="F:UIeXtension.Styles.StyleLayoutContainer.Orientation"/> === <see cref="F:UIeXtension.Enums.UIExOrientation.Vertical"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExFlowPanel.UIExFlowPanelContext.justifyStretchSize">
+            <summary>
+                Size of one <see cref="F:UIeXtension.Enums.UIExAlignment.Stretch"/> for the main axis.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExFlowPanel.UIExFlowPanelContext.alignStretchSize">
+            <summary>
+                Size of one <see cref="F:UIeXtension.Enums.UIExAlignment.Stretch"/> for the transverse axis.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExFlowPanel.UIExFlowPanelContext.justifyOffsets">
+            <summary>
+                List of indentations for each element on the main axis.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExFlowPanel.UIExFlowPanelContext.alignOffsets">
+            <summary>
+                List of indentations for each element along the transverse axis.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExFlowPanel.UIExFlowPanelContext.ignoreJustify">
+            <summary>
+                Indicates that the current layout should not take into account the parameters:
+                <see cref="F:UIeXtension.Styles.StyleLayoutContainer.JustifyContent"/> and <see cref="F:UIeXtension.Styles.StyleLayoutChild.JustifySelf"/> 
+                (i.e. the entire main axis)
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExFlowPanel.UIExFlowPanelContext.ignoreAlign">
+            <summary>
+                Indicates that the current layout should not take into account the parameters:
+                <see cref="F:UIeXtension.Styles.StyleLayoutContainer.AlignItems"/> and <see cref="F:UIeXtension.Styles.StyleLayoutChild.AlignSelf"/> 
+                (i.e. all transverse axis)
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExFlowPanel.UIExFlowPanelContext.ignoreJustifyStretch">
+            <summary>
+                Indicates that the current layout should not take into account the parameters:
+                <see cref="F:UIeXtension.Styles.StyleLayoutContainer.JustifyContent"/> and <see cref="F:UIeXtension.Styles.StyleLayoutChild.JustifySelf"/>if their value is equal
+                <see cref="F:UIeXtension.Enums.UIExAlignment.Stretch"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExFlowPanel.UIExFlowPanelContext.ignoreAlignStretch">
+            <summary>
+                Indicates that the current layout should not take into account the parameters:
+                <see cref="F:UIeXtension.Styles.StyleLayoutContainer.AlignItems"/> and <see cref="F:UIeXtension.Styles.StyleLayoutChild.AlignSelf"/>if their value is equal
+                <see cref="F:UIeXtension.Enums.UIExAlignment.Stretch"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExFlowPanel._flowContext">
+            <summary>
+                Stores data for the current layout <see cref="T:UIeXtension.UIExStackPanel"/>.
+                Relevant only during the life cycle of the layout.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.BeginLayoutContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.EndLayoutContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.ResetFlowContext">
+            <summary>
+                Resets all meanings of context.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.RefreshLayoutLine(System.Collections.Generic.List{System.Int32},System.Single,System.Boolean,Terraria.UI.CalculatedStyle,UIeXtension.Enums.UIExAlignment)">
+            <summary>
+                Start the layout algorithm. Compose elements in a line according to the specified rules.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.CalculateElementsJustifyOffsets(System.Collections.Generic.List{System.Int32},System.Single,System.Boolean,Terraria.UI.CalculatedStyle,System.Single,UIeXtension.Enums.UIExAlignment)">
+            <summary>
+                Counts and returns the indentation list for each element along the main axis.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.CalculateElementsAlignOffsets(System.Collections.Generic.List{System.Int32},Terraria.UI.CalculatedStyle,System.Single)">
+            <summary>
+                Counts and returns the indentation list for each element along the transverse axis.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.GetElementJustifySize(System.Int32,System.Single)">
+            <summary>
+                Returns the size of the element along the main axis (its own or stretched)
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.GetElementAlignSize(System.Int32,System.Single)">
+            <summary>
+                Returns the size of the element along the transverse axis (its own or stretched)
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.SetPosition(System.Int32,System.Boolean,System.Single,Terraria.UI.CalculatedStyle)">
+            <summary>
+                Set the transmitted position for the element on the transmitted axis.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.SetNoStretchSize(System.Int32,System.Boolean,Terraria.UI.CalculatedStyle)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExFlowPanel.TrySetStretchSize(System.Int32,System.Boolean,System.Single,Terraria.UI.CalculatedStyle)">
+            <summary>
+                Installs <see cref="F:UIeXtension.Enums.UIExAlignment.Stretch"/> size for the element on the transmitted axis (if the element is stretched along the transmitted axis)
+            </summary>
+        </member>
+        <member name="T:UIeXtension.UIExStackPanel">
+            <summary>
+                Lines the child elements in one line after another (vertical or horizontal)
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExStackPanel.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExStackPanel.#ctor(UIeXtension.Styles.StyleVisualElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExStackPanel.#ctor(UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExStackPanel.#ctor(UIeXtension.Styles.StyleVisualElement,UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.UIExStackPanel.UIExStackPanelContext">
+            <summary>
+                Class containing temporary information about the current layout <see cref="T:UIeXtension.UIExFlowPanel"/>.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExStackPanel.UIExStackPanelContext.styleLayoutContainer">
+            <summary>
+                Final style <see cref="T:UIeXtension.UIExStackPanel"/>, used in the context of this arrangement of elements.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExStackPanel._context">
+            <summary>
+                Stores data for the current layout <see cref="T:UIeXtension.UIExStackPanel"/>.
+                Relevant only during the life cycle of the layout.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExStackPanel.BeginLayoutContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExStackPanel.EndLayoutContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExStackPanel.PreRefreshLayout">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExStackPanel.RefreshLayout">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.UIExWrapPanel">
+            <summary>
+                It builds child elements in one line after another (vertical or horizontal).
+                Transfers elements to the next line if they do not fit in the previous one.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.#ctor(UIeXtension.Styles.StyleVisualElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.#ctor(UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.#ctor(UIeXtension.Styles.StyleVisualElement,UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.UIExWrapPanel.UIExWrapPanelContext">
+            <summary>
+                Class containing temporary information about the current layout <see cref="T:UIeXtension.UIExFlowPanel"/>.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExWrapPanel.UIExWrapPanelContext.linesElementsIndexes">
+            <summary>
+                A list of lines, each of which is presented as lists of elements in a line.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExWrapPanel.UIExWrapPanelContext.styleLayoutContainer">
+            <summary>
+                Final style <see cref="T:UIeXtension.UIExWrapPanel"/>, used in the context of this arrangement of elements.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExWrapPanel._context">
+            <summary>
+                Stores data for the current layout <see cref="T:UIeXtension.UIExWrapPanel"/>.
+                Relevant only during the life cycle of the layout.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.BeginLayoutContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.EndLayoutContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.PreRefreshLayout">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.RefreshLayout">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.RefreshLayoutDebugLines">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.SetStretchAlignLinesSize(System.Collections.Generic.List{UIeXtension.UIExRectangle},System.Single,System.Single)">
+            <summary>
+                Stretching the lines on the transverse axis.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.CalculateLinesRectangelsOffsets(System.Collections.Generic.List{UIeXtension.UIExRectangle},System.Single,System.Single)">
+            <summary>
+                Setting up lines for alignment.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.GetTotalLineSize(System.Collections.Generic.List{UIeXtension.UIExRectangle})">
+            <summary>
+                The total size of the lines on the transmitted axis.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.GetLinesRectangles">
+            <summary>
+                Returns the list <see cref="T:UIeXtension.UIExRectangle"/> for all lines.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.GetLinesRectangles(System.Int32,System.Int32)">
+            <summary>
+                Returns the list <see cref="T:UIeXtension.UIExRectangle"/> for a range of lines.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.GetLineRectangle(System.Collections.Generic.List{System.Int32})">
+            <summary>
+                Returns. <see cref="T:UIeXtension.UIExRectangle"/> of the transmitted line.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.CalulateLinesElementsIndexes(System.Collections.Generic.List{System.Int32},System.Single)">
+            <summary>
+                Breaks the transferred list of elements into a list of lines
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExWrapPanel.GetNextLineEndIndex(System.Collections.Generic.List{System.Int32},System.Int32,System.Single)">
+            <summary>
+                Returns the index of the last item that is placed in the current line.
+                Or the same index that was passed on, 
+                if the size of the outer region of the main axis of the 1st element is larger, 
+                than the size of the interior of the main axis container.
+            </summary>
+        </member>
+        <member name="T:UIeXtension.UIExGridBase">
+            <summary>
+                Basic class for all Grid-like container layouts.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.#ctor(UIeXtension.Styles.StyleVisualElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.#ctor(UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.#ctor(UIeXtension.Styles.StyleVisualElement,UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.UIExGridBase.UIExGridContext">
+            <summary>
+                Temporary given <see cref="T:UIeXtension.UIExGridBase"/> during the layout.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.UIExGridContext.rowsSpace">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.UIExGridContext.columnsSpace">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.UIExGridContext.styleContainerGrid">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.UIExGridContext.stylesChildsGrid">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.UIExGridContext.rowsCount">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.UIExGridContext.columnsCount">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.UIExGridContext.rowDefinitions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.UIExGridContext.columnDefinitions">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.UIExGridContext.cells">
+            <summary>
+                Area of each cell
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.UIExGridContext.elementsCellDimension">
+            <summary>
+                Area of cells for each element
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase._context">
+            <summary>
+                Temporary given <see cref="T:UIeXtension.UIExGridBase"/> during the layout.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.BeginLayoutContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.EndLayoutContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.PreprareContainerStyleGridContext">
+            <summary>
+                Preparing style <see cref="T:UIeXtension.Styles.StyleLayoutContainerGrid"/> for the current layout.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.PreprareChildStyleGridContext">
+            <summary>
+                Preparing styles <see cref="T:UIeXtension.Styles.StyleLayoutContainerGrid"/> for the current layout.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.ShowGridLines">
+            <summary>
+                A flag indicating whether auxiliary lines should be displayed.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.GridLinesThickness">
+            <summary>
+                Size of auxiliary lines in pixels.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.GridLinesColor">
+            <summary>
+                The color of the auxiliary lines.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExGridBase.GridLinesDebugRectangles">
+            <summary>
+                Contains the size and position of auxiliary lines.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.SetGridLinesInfoForTree(System.Boolean,System.Single,Microsoft.Xna.Framework.Color)">
+            <summary>
+                Set parameters for displaying auxiliary lines for the whole tree.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.SetGridLinesInfoForBranch(System.Boolean,System.Single,Microsoft.Xna.Framework.Color)">
+            <summary>
+                Set parameters for displaying auxiliary lines for all descendants.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.SetGridLinesInfoForBranch(Terraria.UI.UIElement,System.Boolean,System.Single,Microsoft.Xna.Framework.Color)">
+            <summary>
+                Set the display parameters of auxiliary lines for all descendants of the transmitted element.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.RefreshLayoutDebugLines">
+            <summary>
+                Recalculation of the location of auxiliary lines of the arrangement of the element and the auxiliary grid Grid.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.AddGridLineRectangle(System.Boolean,System.Single@,System.Single,System.Single,System.Single,System.Single,System.Boolean)">
+            <summary>
+                Calculates the size and position of the auxiliary line. <see cref="F:UIeXtension.UIExGridBase.GridLinesDebugRectangles"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.DrawSelf(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.PrepareGridDefinitions">
+            <summary>
+                Converts values <see cref="T:UIeXtension.Styles.UIExGridLength"/> in pixels.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.CalculateFrDefinitions(System.Boolean)">
+            <summary>
+                Converts values <see cref="F:UIeXtension.Styles.UIExGridLength.Type"/> === <see cref="F:UIeXtension.Enums.UIExGridLengthType.Fraction"/> in pixels.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.CalculateAutoDefinitionWithSpan(System.Boolean)">
+            <summary>
+                Converts values <see cref="F:UIeXtension.Styles.UIExGridLength.Type"/> === <see cref="F:UIeXtension.Enums.UIExGridLengthType.Auto"/> in pixels.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.GetAutoDefinitionsCount(System.Collections.Generic.List{System.Int32},System.Boolean)">
+            <summary>
+                Returns the number of elements to a row/column with a value <see cref="F:UIeXtension.Enums.UIExGridLengthType.Auto"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.GetDefinitionsTotalPixelsSize(System.Collections.Generic.List{UIeXtension.Styles.UIExGridLength},System.Boolean,System.Func{System.Int32,System.Boolean})">
+            <summary>
+                Returns the total size in pixels (including indentations) of rows/columns.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.GetDefinitionsTotalPixelsSize(System.Collections.Generic.List{System.Int32},System.Boolean,System.Func{System.Int32,System.Boolean})">
+            <summary>
+                Returns the total size in pixels (including indentations) of rows/columns.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.GetConvertPrecentDefinition(UIeXtension.Styles.UIExGridLength,System.Single)">
+            <summary>
+                Returns the total size in pixels (including indentations) of rows/columns.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.GetConvertAutoDefinitionWithoutSpan(System.Boolean,System.Int32,UIeXtension.Styles.UIExGridLength)">
+            <summary>
+                Converts values <see cref="F:UIeXtension.Styles.UIExGridLength.Type"/> === <see cref="F:UIeXtension.Enums.UIExGridLengthType.Precent"/> in pixels.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.GetElementDefinitionsIndexes(System.Int32,System.Boolean)">
+            <summary>
+                Returns the indices of all rows/columns occupied by the transmitted element.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.GetDefinitionElementsIndexes(System.Int32,System.Boolean)">
+            <summary>
+                Returns all the elements that occupy the transferred cell.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.IsElementInDefinition(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+                Checks whether the transferred element occupies the transmitted cell.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.IsAutoDefinition(System.Int32,System.Boolean)">
+            <summary>
+                Checks whether the transmitted row/column has a value <see cref="F:UIeXtension.Styles.UIExGridLength.Type"/> === <see cref="F:UIeXtension.Enums.UIExGridLengthType.Auto"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.IsFrDefinition(System.Int32,System.Boolean)">
+            <summary>
+                Checks whether the transmitted row/column has a value <see cref="F:UIeXtension.Styles.UIExGridLength.Type"/> === <see cref="F:UIeXtension.Enums.UIExGridLengthType.Fraction"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.IsTypeDefinitions(System.Int32,System.Boolean,UIeXtension.Enums.UIExGridLengthType)">
+            <summary>
+                Checks whether the transmitted row/column has the same value <see cref="F:UIeXtension.Styles.UIExGridLength.Type"/> transmitted <paramref name="type"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.RefreshLayout">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.CalculateElementGridPositionAndSize(System.Int32)">
+            <summary>
+                Specifies the position and size of the elements depending on its Row, Column, RowSpan. ColumnSpan
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.SetElementAlignment(System.Int32,UIeXtension.Enums.UIExAlignment,System.Boolean,System.Boolean)">
+            <summary>
+                Specifies the alignment of the element within the cell (cells)
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.SetElementSize(System.Int32,UIeXtension.Enums.UIExAlignment,System.Boolean,System.Boolean)">
+            <summary>
+                Specifies the alignment of the element inside the cell (cells) along the transmitted axis
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.CalculateElementCellDimensions(System.Int32)">
+            <summary>
+                Specifies the position and size of the area in which the transferred element will be located.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.GetCellSizeBySpan(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+                Returns the total size of the cells that the transferred element occupies.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGridBase.CalculateCells">
+            <summary>
+                Calculation of the position and size of each cell (in pixels)
+            </summary>
+        </member>
+        <member name="T:UIeXtension.UIExGrid">
+            <summary>
+                Container layout, allowing you to arrange the elements in the form of a grid.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExGrid.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExGrid.#ctor(UIeXtension.Styles.StyleVisualElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExGrid.#ctor(UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExGrid.#ctor(UIeXtension.Styles.StyleVisualElement,UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExGrid.PreprareContainerStyleGridContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExGrid.PreprareChildStyleGridContext">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.UIExUniformGrid">
+            <summary>
+                Container layout, allowing you to arrange the elements in the form of a grid.
+                The grid is indicated manually or automatically.
+                The elements are placed automatically.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExUniformGrid.#ctor">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExUniformGrid.#ctor(UIeXtension.Styles.StyleVisualElement)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExUniformGrid.#ctor(UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExUniformGrid.#ctor(UIeXtension.Styles.StyleVisualElement,UIeXtension.Styles.StyleLayoutContainer)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExUniformGrid.PreprareContainerStyleGridContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExUniformGrid.PreprareChildStyleGridContext">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExUniformGrid.CalculateGridDimensions">
+            <summary>
+                Calculation of the number of rows and columns <see cref="T:UIeXtension.UIExUniformGrid"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExUniformGrid.GetConvertPrecentDefinition(UIeXtension.Styles.UIExGridLength,System.Single)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExUniformGrid.GetConvertAutoDefinitionWithoutSpan(System.Boolean,System.Int32,UIeXtension.Styles.UIExGridLength)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExUniformGrid.CalculateAutoDefinitionWithSpan(System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="T:UIeXtension.LayoutDebugRectangle">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.LayoutDebugRectangle.X">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.LayoutDebugRectangle.Y">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.LayoutDebugRectangle.Width">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.LayoutDebugRectangle.Height">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.LayoutDebugRectangle.#ctor(System.Single,System.Single,System.Single,System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.LayoutDebugRectangle.IsEmpty">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.LayoutDebugRectangle.IsNotEmpty">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.LayoutDebugRectangle.GetXnaRentangle">
+            <summary/>
+        </member>
+        <member name="T:UIeXtension.UIExLayout">
+            <summary>
+                The basic class for the elements of the layout of this library.
+            </summary>
+            <remarks>
+                Responsible for: 
+                Basic definition of the life cycle.
+                Tools for Adapting to Restrictions tModLoader.
+            </remarks>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.#ctor">
+            <summary>
+                Default constructor. Uses default style.
+            </summary>
+            <remarks>
+                Default visual display style: <see cref="T:UIeXtension.Styles.StyleVisualElement"/>.
+                Container layout style by default: <see cref="T:UIeXtension.Styles.StyleLayoutContainer"/>
+            </remarks>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.#ctor(UIeXtension.Styles.StyleVisualElement)">
+            <summary>
+                Designer that adopts only visual display style. Uses the default container layout style.
+            </summary>
+            <remarks>
+                Container layout style by default: <see cref="T:UIeXtension.Styles.StyleLayoutContainer"/>
+            </remarks>
+            <param name="styleVisual">
+                Visual display style
+            </param>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.#ctor(UIeXtension.Styles.StyleLayoutContainer)">
+            <summary>
+                Constructor that accepts only the container layout style, uses the default visual display style.
+            </summary>
+            <remarks>
+                Default visual display style: <see cref="T:UIeXtension.Styles.StyleVisualElement"/>
+            </remarks>
+            <param name="styleLayout">
+                Container layout style
+            </param>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.#ctor(UIeXtension.Styles.StyleVisualElement,UIeXtension.Styles.StyleLayoutContainer)">
+            <summary>
+                A constructor that accepts all the styles that this class supports.
+            </summary>
+            <param name="styleVisual">Visual display style</param>
+            <param name="styleLayout">Container layout style</param>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.Wrap``1(Terraria.UI.UIElement,System.Boolean,System.Boolean)">
+            <summary>
+                Roll over the element <see cref="T:Terraria.UI.UIElement"/> into <typeparamref name="TUIElement"/>
+            </summary>
+            <remarks>
+                Use wrapping if you want your item to be able to use:
+                <see cref="F:Terraria.UI.UIElement.MarginTop"/>; <see cref="F:Terraria.UI.UIElement.MarginLeft"/>;
+                <see cref="F:Terraria.UI.UIElement.MarginRight"/>; <see cref="F:Terraria.UI.UIElement.MarginBottom"/>;
+                <see cref="F:Terraria.UI.UIElement.HAlign"/>; <see cref="F:Terraria.UI.UIElement.VAlign"/>
+                <para>Using these fields without wrapping can lead to unexpected results in the layout.</para>
+            </remarks>
+            <typeparam name="TUIElement">Type <see cref="T:Terraria.UI.UIElement"/>which should be wrapped <paramref name="element"/></typeparam>
+            <param name="element">A user interface element that needs to be wrapped</param>
+            <param name="stretch">
+                Indicates that <paramref name="element"/> must have Width.Set(0f, 1f) and Height.Set(0f, 1f)
+            </param>
+            <param name="center">
+                Indicates that <paramref name="element"/> must have HAlign = 0.5f and VAlign = 0.5f
+            </param>
+            <returns>Created element-wrapper, inside which is nested <paramref name="element"/></returns>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.Wrap``1(Terraria.UI.UIElement,``0,System.Boolean,System.Boolean)">
+            <summary>
+                Roll over the element <see cref="T:Terraria.UI.UIElement"/> into <typeparamref name="TUIElement"/>
+            </summary>
+            <remarks>
+                Use wrapping if you want your item to be able to use:
+                <see cref="F:Terraria.UI.UIElement.MarginTop"/>; <see cref="F:Terraria.UI.UIElement.MarginLeft"/>;
+                <see cref="F:Terraria.UI.UIElement.MarginRight"/>; <see cref="F:Terraria.UI.UIElement.MarginBottom"/>;
+                <see cref="F:Terraria.UI.UIElement.HAlign"/>; <see cref="F:Terraria.UI.UIElement.VAlign"/>
+                <para>Using these fields without wrapping can lead to unexpected results in the layout.</para>
+            </remarks>
+            <typeparam name="TUIElement">Type <see cref="T:Terraria.UI.UIElement"/>which should be wrapped <paramref name="element"/></typeparam>
+            <param name="wrapElement">Already created and transferred element-wrapper, which will be wrapped <paramref name="element"/></param>
+            <param name="element">A user interface element that needs to be wrapped</param>
+            <param name="stretch">
+                Indicates that <paramref name="element"/> must have Width.Set(0f, 1f) and Height.Set(0f, 1f)
+            </param>
+            <param name="center">
+                Indicates that <paramref name="element"/> must have HAlign = 0.5f and VAlign = 0.5f
+            </param>
+            <returns><paramref name="wrapElement"/>, inside which is nested <paramref name="element"/></returns>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.Max(System.Int32,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.Min(System.Int32,System.Int32)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetElementsByIndexses(System.Collections.Generic.List{System.Int32})">
+            <summary>
+                Turns the list <see cref="T:Terraria.UI.UIElement"/> from the transmitted list of indices <see cref="F:UIeXtension.UIExLayout._elementsContext"/>.
+                Outside the life cycle, the layout will lead to exclusion.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetElementsIndexsesByElementsContext">
+            <summary>
+                Turns the list from <see cref="F:UIeXtension.UIExLayout._elementsContext"/> index <see cref="T:Terraria.UI.UIElement"/>.
+                Outside the life cycle, the layout will lead to exclusion.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.IsOuterDimensionsNotEquals(Terraria.UI.UIElement,Terraria.UI.CalculatedStyle)">
+            <summary>
+                Checks to see if they're different. <see cref="M:Terraria.UI.UIElement.GetOuterDimensions"/> 
+                and <see cref="T:Terraria.UI.CalculatedStyle"/> <paramref name="outerDimensions"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.IsInnerDimensionsNotEquals(Terraria.UI.UIElement,Terraria.UI.CalculatedStyle)">
+            <summary>
+                Checks to see if they're different. <see cref="M:Terraria.UI.UIElement.GetInnerDimensions"/> 
+                and <see cref="T:Terraria.UI.CalculatedStyle"/> <paramref name="innerDimensions"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.IsDimensionsNotEquals(Terraria.UI.UIElement,Terraria.UI.CalculatedStyle)">
+            <summary>
+                Checks to see if they're different. <see cref="M:Terraria.UI.UIElement.GetDimensions"/> and <see cref="T:Terraria.UI.CalculatedStyle"/> <paramref name="dimensions"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.IsDimensionsNotEquals(Terraria.UI.CalculatedStyle,Terraria.UI.CalculatedStyle)">
+            <summary>
+                Checks to see if they're different. <see cref="T:Terraria.UI.CalculatedStyle"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetRelativeDimensions(Terraria.UI.CalculatedStyle)">
+            <summary>
+                Returns. <paramref name="dimensions"/>Replace X/Y with the position relative to the container.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetJustify(System.Int32)">
+            <summary>
+                Defines <see cref="T:UIeXtension.Enums.UIExAlignment"/> on the main axis.
+                <para>
+                    If the nested element positions itself, its positioning returns: <see cref="F:UIeXtension.Styles.StyleLayoutChild.JustifySelf"/>. 
+                    Otherwise, returns the positioning of the container layout: <see cref="F:UIeXtension.Styles.StyleLayoutContainer.JustifyContent"/>
+                </para>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetAlign(System.Int32)">
+            <summary>
+                Defines <see cref="T:UIeXtension.Enums.UIExAlignment"/> transverse axis.
+                <para>
+                    If the nested element positions itself, its positioning returns: <see cref="F:UIeXtension.Styles.StyleLayoutChild.AlignSelf"/>. 
+                    Otherwise, returns the positioning of the container layout: <see cref="F:UIeXtension.Styles.StyleLayoutContainer.AlignItems"/>
+                </para>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetMaxSize(System.Collections.Generic.List{System.Int32},System.Boolean,System.Func{System.Int32,System.Boolean})">
+            <summary>
+                Returns the maximum specified size of the transferred elements.
+                Using an off-life-cycle layout will result in exclusion.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetOrientationThickness(UIeXtension.Styles.UIExThickness,System.Boolean,System.Single@,System.Single@,System.Single)">
+            <summary>
+                It is considered to be initial and final. <see cref="T:UIeXtension.Styles.UIExThickness"/> depending on the transmitted axis.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetOrientationThickness(UIeXtension.Styles.UIExThickness,System.Boolean,System.Single@,System.Single@,Terraria.UI.CalculatedStyle)">
+            <summary>
+                It is considered to be initial and final. <see cref="T:UIeXtension.Styles.UIExThickness"/> depending on the transmitted axis.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetChildMargin(UIeXtension.Styles.StyleLayoutChild,System.Boolean,System.Single@,System.Single@,Terraria.UI.CalculatedStyle)">
+            <summary>
+                The initial and final Margin is considered depending on the transmitted axis.
+                Using an off-life-cycle layout will result in exclusion.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetAlignment(System.Int32,System.Boolean)">
+            <summary>
+                Returns. <see cref="F:UIeXtension.Styles.StyleLayoutContainer.JustifyContent"/> or <see cref="F:UIeXtension.Styles.StyleLayoutContainer.AlignItems"/>or
+                <see cref="F:UIeXtension.Styles.StyleLayoutChild.JustifySelf"/>or <see cref="F:UIeXtension.Styles.StyleLayoutChild.AlignSelf"/> for the element, depending on the
+                Axis and rules of return of the value of methods <see cref="M:UIeXtension.UIExLayout.GetJustify(System.Int32)"/> / <see cref="M:UIeXtension.UIExLayout.GetAlign(System.Int32)"/>
+            </summary>
+            <param name="index"></param>
+            <param name="justify"></param>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.IsStretchAlignment(System.Int32,System.Boolean)">
+            <summary>
+                Checks whether the alignment property on the transmitted axis is established for the element <see cref="F:UIeXtension.Enums.UIExAlignment.Stretch"/>
+            </summary>
+            <param name="index"></param>
+            <param name="justify"></param>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetSizeElements(System.Collections.Generic.List{System.Int32},System.Boolean)">
+            <summary>
+                Returns the occupied space on a given axis
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetSizeNonStretchElements(System.Collections.Generic.List{System.Int32},System.Boolean,System.Boolean)">
+            <summary>
+                Returns the occupied space along a given axis elements with the property of alignment not installed on the <see cref="F:UIeXtension.Enums.UIExAlignment.Stretch"/> 
+            </summary>
+            <param name="vertical">Orientation of the container</param>
+            <param name="justify">The axis for which the occupied space is considered</param>
+            <param name="elementsIndexes">Index of elements</param>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetSizeNonStretchElement(System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+                Returns the occupied space by the element, if it does not have an alignment property on the transmitted axis. <see cref="F:UIeXtension.Enums.UIExAlignment.Stretch"/> 
+            </summary>
+            <param name="index"></param>
+            <param name="vertical">Orientation of the container</param>
+            <param name="justify">The axis for which the occupied space is considered</param>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetStretchElementsCount(System.Collections.Generic.List{System.Int32},System.Boolean)">
+            <summary>
+                Returns the number of elements with the property of alignment along the transmitted axis <see cref="F:UIeXtension.Enums.UIExAlignment.Stretch"/> 
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetStrethSize(System.Single,System.Int32)">
+            <summary>
+                Counts and returns the size of one <see cref="F:UIeXtension.Enums.UIExAlignment.Stretch"/> 
+            </summary>
+            <param name="availableSpace">Free space for stretching</param>
+            <param name="stretchCount">Number of elements with property <see cref="F:UIeXtension.Enums.UIExAlignment.Stretch"/></param>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetInnerDimensionsSize(System.Boolean)">
+            <summary>
+                Returns the internal size of the container on the specified axis.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetInnerDimensionsSize(System.Boolean,Terraria.UI.CalculatedStyle)">
+            <summary>
+                Returns the internal size of the container on the specified axis.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetElementSize(System.Int32,System.Boolean)">
+            <summary>
+                Returns the size of the element on the specified axis.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._rectangleContexts">
+            <summary>
+                Stores the values of the assembled areas. It's only relevant during the layout life cycle.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._styleElementsContexts">
+            <summary>
+                It stores all the styles of the child elements involved in the layout. It is relevant only during the layout life cycle.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._elementsContext">
+            <summary>
+                Stores the entire list of child elements involved in the layout, only relevant during the life cycle of the layout
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._innerDimensionsContext">
+            <summary>
+                Stores the value of the internal area of the linker. Only relevant during the life cycle of the layout.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._elementsOuterDimensionsContext">
+            <summary>
+                Stores the value of the external areas of the elements involved in the layout. Relevant only during the layout life cycle
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._elementsDimensionsContext">
+            <summary>
+                Stores the value of the external elements involved in the layout. Relevant only during the layout life cycle.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetWithoutLayoutElementsCount">
+            <summary>
+                Counts the number of child elements that are NOT involved in the layout.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.BeginLayoutContext">
+            <summary>
+                Preparing. <see cref="F:UIeXtension.UIExLayout._rectangleContexts"/>. <see cref="F:UIeXtension.UIExLayout._styleElementsContexts"/> 
+                and <see cref="F:UIeXtension.UIExLayout._elementsContext"/> before starting the layout.
+                <para>Upon completion of the arrangement, these resources are released into <see cref="M:UIeXtension.UIExLayout.EndLayoutContext"/></para>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.EndLayoutContext">
+            <summary>
+                Frees up resources <see cref="F:UIeXtension.UIExLayout._rectangleContexts"/>. <see cref="F:UIeXtension.UIExLayout._styleElementsContexts"/> 
+                and <see cref="F:UIeXtension.UIExLayout._elementsContext"/> after completion of the layout.
+                <para>These resources are prepared in the method <see cref="M:UIeXtension.UIExLayout.BeginLayoutContext"/></para>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExLayout.ShowLayoutLines">
+            <summary>A status flag indicating whether to enable the display of auxiliary lines for the container.</summary>
+        </member>
+        <member name="F:UIeXtension.UIExLayout.LayoutLinesThickness">
+            <summary>
+                Size (in pixels) of auxiliary lines for the container.
+                Not used if <see cref="F:UIeXtension.UIExLayout.ShowLayoutLines"/> === false
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExLayout.LayoutLinesColor">
+            <summary>
+                Color of auxiliary lines for the container.
+                Not used if <see cref="F:UIeXtension.UIExLayout.ShowLayoutLines"/> === false
+            </summary>
+        </member>
+        <member name="P:UIeXtension.UIExLayout.LayoutDebugRectangles">
+            <summary>
+                List of areas containing coordinates of auxiliary lines.
+                <para>It is used only if <see cref="F:UIeXtension.UIExLayout.ShowLayoutLines"/> === true</para>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.SetLayoutLinesInfoForTree(System.Boolean,System.Nullable{System.Single},System.Nullable{Microsoft.Xna.Framework.Color})">
+            <summary>Set the state. <see cref="F:UIeXtension.UIExLayout.ShowLayoutLines"/> element-wood</summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.SetLayoutLinesInfoForBranch(System.Boolean,System.Nullable{System.Single},System.Nullable{Microsoft.Xna.Framework.Color})">
+            <summary>Set the state. <see cref="F:UIeXtension.UIExLayout.ShowLayoutLines"/> and its parameters (if transmitted) for the entire branch of the elements</summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.SetLayoutLinesInfoForBranch(Terraria.UI.UIElement,System.Boolean,System.Nullable{System.Single},System.Nullable{Microsoft.Xna.Framework.Color})">
+            <summary>Set the state. <see cref="F:UIeXtension.UIExLayout.ShowLayoutLines"/> element-wood</summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.RefreshLayoutDebugLines">
+            <summary>
+                Recalculation of the location of auxiliary lines of the element layout.
+            </summary>
+            <remarks>
+                It doesn't do anything if you <see cref="P:UIeXtension.UIExLayout.StyleLayout"/> significance <see cref="F:UIeXtension.UIExLayout.ShowLayoutLines"/> === false.
+                Caused after the method <see cref="M:UIeXtension.UIExLayout.PostRefreshLayout"/>
+            </remarks>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.DrawSelf(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.DrawRectangleOutline(Microsoft.Xna.Framework.Graphics.SpriteBatch,UIeXtension.LayoutDebugRectangle)">
+            <summary>
+                Drawing auxiliary lines of the layout.
+            </summary>
+            <param name="spriteBatch"/>
+            <param name="rectangle">Coordinates of support lines</param>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._statesRecalculateDalayMs">
+            <summary>
+                Stores a table with a minimum delay (in milliseconds) between the restatement of the layout for all containers in <see cref="T:Terraria.UI.UIState"/>.
+            </summary>
+            <remarks>
+                The minimum delay value is separate for each <see cref="T:Terraria.UI.UIState"/>.
+                If <see cref="T:Terraria.UI.UIState"/> is not contained in this table - the linker uses the value: <see cref="F:UIeXtension.UIExLayout.RecalculateLayoutDelayMs"/>
+            </remarks>
+        </member>
+        <member name="F:UIeXtension.UIExLayout.RecalculateLayoutDelayMs">
+            <summary>
+                Minimum delay (in milliseconds) between recalculation of the layout.
+                It does not do anything for the current <see cref="T:Terraria.UI.UIState"/> has been established in
+                table <see cref="F:UIeXtension.UIExLayout._statesRecalculateDalayMs"/> not null
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._remainingRecalculateLayoutDelayMs">
+            <summary>
+                The current delay (in milliseconds) before the next restatement of the layout.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.SetRecalculateLayoutDelayMsBranch(Terraria.UI.UIElement,System.Int32)">
+            <summary>
+                Setting the value <see cref="F:UIeXtension.UIExLayout.RecalculateLayoutDelayMs"/> for the current element and all descendants.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.ResetСurrentRecalculateLayoutDelayMsBranch(Terraria.UI.UIElement)">
+            <summary>
+                It resets. <see cref="F:UIeXtension.UIExLayout._remainingRecalculateLayoutDelayMs"/> for the element and all descendants.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.SetRecalculateLayoutDelayMsState(Terraria.UI.UIState,System.Nullable{System.Int32})">
+            <summary>
+                Set the minimum delay before updating the layout for the current <see cref="T:Terraria.UI.UIState"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.GetRecalculateLayoutDelayMsState(Terraria.UI.UIState)">
+            <summary>
+                
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+                Has a basic implementation <see cref="M:Terraria.UI.UIElement.Update(Microsoft.Xna.Framework.GameTime)"/> and a mechanism to protect against too frequent recalculation of the layout.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._lastInnerDimensions">
+            <summary>
+                The internal size of the current layout element after the last recalculation of the layout for the child elements.
+            </summary>
+            <remarks>
+                It is used as an element of optimization.
+                <para>If the size has changed, the layout is recalculated.</para>
+                <para>
+                    If the size has not changed, the need for reconfiguration is calculated.
+                    assisted <see cref="F:UIeXtension.UIExLayout._lastLayoutElements"/>
+                </para>
+            </remarks>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._lastLayoutElements">
+            <summary>
+                List of Elements that this container had after the previous layout.
+            </summary>
+            <remarks>
+                It is used as an element of optimization.
+                <para>If the list of items has changed, the layout is recalculated.</para>
+                <para>
+                    If the list of elements has not changed, the need for recomposition is calculated.
+                    assisted <see cref="F:UIeXtension.UIExLayout._lastInnerDimensions"/>
+                </para>
+            </remarks>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._lastLayoutElementsOuterDimensions">
+            <summary>
+                A list of the Elements sizes that this container had after the previous layout.
+            </summary>
+            <remarks>
+                It is used as an element of optimization.
+                <para>If the list of items has changed, the layout is recalculated.</para>
+                <para>
+                    If the list of elements has not changed, the need for recomposition is calculated.
+                    assisted <see cref="F:UIeXtension.UIExLayout._lastInnerDimensions"/> and <see cref="F:UIeXtension.UIExLayout._lastLayoutElements"/>
+                </para>
+            </remarks>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._ignoreLastLayoutInfo">
+            <summary>
+                A flag indicating that the following <see cref="M:UIeXtension.UIExLayout.RecalculateLayout"/> should be ignored
+                <see cref="F:UIeXtension.UIExLayout._lastInnerDimensions"/>. <see cref="F:UIeXtension.UIExLayout._lastLayoutElements"/> and <see cref="F:UIeXtension.UIExLayout._lastLayoutElementsOuterDimensions"/>
+            </summary>
+            <remarks>
+                Meaning of the flag true first-call <see cref="M:Terraria.UI.UIElement.Recalculate"/> and invoking the method
+                <see cref="M:UIeXtension.UIExLayout.EndLayoutPreparation(Terraria.UI.UIState)"/>After each layout, this flag is dropped to a value. false
+            </remarks>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._currentElementsStyles">
+            <summary>
+                Styles of current elements
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._lastStyleLayoutChildArray">
+            <summary>
+                Copy of element styles after the last layout
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._lastStyleLayoutContainer">
+            <summary>
+                A copy of the container layout style after the last layout
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.IsLastLayoutInfoChanged">
+            <summary>
+                Determines whether recomposition of the elements is required.
+            </summary>
+            <remarks>
+                V. tModLoader <see cref="M:Terraria.UI.UIElement.Recalculate"/> summoned UI- branches of elements every frame.
+                Algorithms of the layout work when <see cref="M:Terraria.UI.UIElement.Recalculate"/> And they're resource-intensive.
+                This method checks:
+                <para>The size of the builder itself has changed.</para>
+                <para>Subsidiary elements changed</para>
+                <para>Has the size of the child elements changed?</para>
+                <para>
+                    Ignores all of these checks if <see cref="F:UIeXtension.UIExLayout._ignoreLastLayoutInfo"/> === true. 
+                    Meaning of the flag true first-call <see cref="M:Terraria.UI.UIElement.Recalculate"/> and invoking the method
+                    <see cref="M:UIeXtension.UIExLayout.EndLayoutPreparation(Terraria.UI.UIState)"/>After each layout, this flag is dropped to a value. false
+                </para>
+                <para>This information is updated after the layout (if any) in <see cref="M:UIeXtension.UIExLayout.UpdateLastLayoutInfo"/></para>
+            </remarks>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.UpdateLastLayoutInfo">
+            <summary>
+                Updates information about the latest layout. This information is used in the method <see cref="M:UIeXtension.UIExLayout.IsLastLayoutInfoChanged"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.ResetLastLayoutInfoForBranch(Terraria.UI.UIElement)">
+            <summary>
+                Indicates the item and all descendants to ignore the last stored items and dimensions when they try to recalculate the layout.
+            </summary>
+            <remarks>
+                See more in the description <see cref="F:UIeXtension.UIExLayout._ignoreLastLayoutInfo"/>. <see cref="M:UIeXtension.UIExLayout.IsLastLayoutInfoChanged"/>.
+                <see cref="M:UIeXtension.UIExLayout.UpdateLastLayoutInfo"/> and <see cref="F:UIeXtension.UIExLayout._lastInnerDimensions"/>
+            </remarks>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._pauseRecalculateChildren">
+            <summary>
+                Flag indicating the prohibition of the method <see cref="M:Terraria.UI.UIElement.RecalculateChildren"/>
+            </summary>
+            <remarks>
+                Meaning. true This indicates that the recalculation of the size of the descendants will not be carried out.
+                <para>
+                    It is used so that the layout of the child elements is performed earlier than the recalculation of their sizes.
+                </para>
+            </remarks>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._styleLayoutChildArray">
+            <summary>
+                It retains all styles of elements.
+                Updated in the method <see cref="M:UIeXtension.UIExLayout.UpdateStyleLayoutChildArray"/>
+                This method is checked during the check for updating information from the latest layout.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.Recalculate">
+            <summary>
+                Recalculation of sizes and arrangement of elements
+            </summary>
+            <remarks>
+                Analogue <see cref="M:Terraria.UI.UIElement.Recalculate"/> with the call of the method of life cycle layout: <see cref="M:UIeXtension.UIExLayout.RecalculateLayout"/>
+                <para>---</para>
+                <para>
+                    Changes the order of calculation of child elements:
+                    <para>Was: Recalculate -> RecalulateChildren() -> for(child).Recalculate()</para>
+                    <para>Became: Recalculate -> RecalculateLayout(sic) RecalulateChildren() -> for(child).Recalculate()</para>
+                </para>
+            </remarks>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.RecalculateChildren">
+            <summary>
+                Analogue <see cref="M:Terraria.UI.UIElement.RecalculateChildren"/> flag-supported <see cref="F:UIeXtension.UIExLayout._pauseRecalculateChildren"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.RecalculateLayout">
+            <summary>
+                Determines the life cycle of recalculation of the layout of child elements
+            </summary>
+            <remarks>
+                It is not recommended to override this method and interfere with the life cycle of the layout without an urgent need.
+                Called right after. <see cref="M:Terraria.UI.UIElement.Recalculate"/> which causes <see cref="M:Terraria.UI.UIElement.RemoveAllChildren"/>).
+                First, the current size is recalculated. <see cref="T:UIeXtension.UIExLayout"/>. 
+                Then the child elements are recalculated, then this method is called.
+                See the description of the flag itself and its methods. <see cref="M:UIeXtension.UIExLayout.BeginLayoutPreparation(Terraria.UI.UIState)"/> and <see cref="M:UIeXtension.UIExLayout.EndLayoutPreparation(Terraria.UI.UIState)"/>
+            </remarks>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.PreRefreshLayout">
+            <summary>
+                Defines additional actions before the main stage of the layout.
+            </summary>
+            <remarks>
+                Called before. <see cref="M:UIeXtension.UIExLayout.RefreshLayout"/>.
+                V. <see cref="T:UIeXtension.UIExLayout"/> By default the body of the method is empty.
+            </remarks>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.RefreshLayout">
+            <summary>
+                Defines the main part of the layout algorithm.
+            </summary>
+            <remarks>
+                Called before. <see cref="M:UIeXtension.UIExLayout.RefreshLayout"/>.
+                V. <see cref="T:UIeXtension.UIExLayout"/> By default the body of the method is empty.
+            </remarks>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.ApplyLayout">
+            <summary>
+                Designed to apply the layout context to the child elements involved in the layout
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.PostRefreshLayout">
+            <summary>
+                Determines additional actions after the main stage of the layout.
+            </summary>
+            <remarks>
+                Called right after. <see cref="M:UIeXtension.UIExLayout.PreRefreshLayout"/> and before the call <see cref="M:UIeXtension.UIExLayout.PostRefreshLayout"/>.
+                V. <see cref="T:UIeXtension.UIExLayout"/> By default the body of the method is empty.
+            </remarks>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.ApplyElementLayout(UIeXtension.RectangleLayoutContext)">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExLayout._statesPreparationTable">
+            <summary>
+                Keeps the list. <see cref="T:Terraria.UI.UIState"/>Those who are currently in the process of preparation.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.BeginLayoutPreparation(Terraria.UI.UIState)">
+            <summary>
+                Notifies all containers in <see cref="T:Terraria.UI.UIState"/>. 
+                that the layout should not be performed before the call <see cref="M:UIeXtension.UIExLayout.EndLayoutPreparation(Terraria.UI.UIState)"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.EndLayoutPreparation(Terraria.UI.UIState)">
+            <summary>
+                Notifies all containers inside <see cref="T:Terraria.UI.UIState"/>that action
+                <see cref="M:UIeXtension.UIExLayout.BeginLayoutPreparation(Terraria.UI.UIState)"/> It's over.
+            </summary>
+            <remarks>
+                Requires all nested containers to complete the layout, ignoring all internal constraints.
+            </remarks>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.IsLayoutPreparation">
+            <summary>
+                Returns the state of preparation of the container layout.
+                If he does. trueThis means that the layout of all containers for the current <see cref="T:Terraria.UI.UIState"/>
+                suspended.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.IsLayoutPreparation(Terraria.UI.UIElement)">
+            <summary>
+                Returns the state of preparation of the container layout.
+                If he does. trueThis means that the layout of all containers for the current <see cref="T:Terraria.UI.UIState"/>
+                suspended.
+            </summary>
+        </member>
+        <member name="P:UIeXtension.UIExLayout.StyleLayout">
+            <summary>
+                Indicates the basic style of the layout of child elements
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExLayout.Stretch">
+            <summary>
+                Set the size of the transferred element to the entire size of the parent element.
+            </summary>
+        </member>
+        <member name="T:UIeXtension.RecalculateLayoutStateDelay">
+            <summary>
+                Auxiliary class for the table <see cref="T:System.Runtime.CompilerServices.ConditionalWeakTable`2"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.RecalculateLayoutStateDelay.DelayMs">
+            <summary>
+                Millisecond delay
+            </summary>
+        </member>
+        <member name="T:UIeXtension.UIExRectangle">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExRectangle.Top">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExRectangle.Left">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExRectangle.Right">
+            <summary/>
+        </member>
+        <member name="F:UIeXtension.UIExRectangle.Bottom">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExRectangle.#ctor">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExRectangle.#ctor(System.Single,System.Single,System.Single,System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExRectangle.GetHeight">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExRectangle.GetWidth">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExRectangle.GetSize(System.Boolean)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExRectangle.SetSize(System.Boolean,System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExRectangle.AddSize(System.Boolean,System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExRectangle.GetCalculatedStyle">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExRectangle.AddTopOffset(System.Single)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.UIExRectangle.AddLeftOffset(System.Single)">
+            <summary/>
+        </member>
+        <member name="T:UIeXtension.UIExElement">
+            <summary>
+                Basic class for all UIElements of this library
+            </summary>
+            <remarks>
+                Use it. <see cref="T:UIeXtension.Styles.StyleVisualElement"/> as the main method of styling the element
+            </remarks>
+        </member>
+        <member name="F:UIeXtension.UIExElement.Data">
+            <summary>
+                A field for a user type of data that will be stored for a separate <see cref="T:UIeXtension.UIExElement"/>
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExElement.StyleDisplay">
+            <summary>
+                Style table with visual parameters that everyone uses UI- an element of this library.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExElement.#ctor">
+            <summary>
+            When using this constructor overload, the element receives a default style sheet.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExElement.#ctor(UIeXtension.Styles.StyleVisualElement)">
+            <summary>
+                Constructor overload accepting the main style sheet UI- Elements.
+            </summary>
+            <param name="style">
+                The main style sheet of all UI-elements
+            </param>
+        </member>
+        <member name="M:UIeXtension.UIExElement.Recalculate">
+            <summary>
+                Recalculates the styles of the element, then calls <see cref="M:Terraria.UI.UIElement.Recalculate"/>
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExElement.UpdateLastTMLStyle">
+            <summary>
+                Updates the meaning <see cref="F:UIeXtension.UIExElement._lastTMLStyle"/>.
+                Calling. <see cref="M:UIeXtension.UIExElement.RefreshTMLDisplayStyle"/>if <see cref="F:UIeXtension.UIExElement._lastTMLStyle"/> === true
+                Calling. <see cref="M:UIeXtension.UIExElement.RecalculateDisplayStyle"/> if <see cref="F:UIeXtension.UIExElement._lastTMLStyle"/> === false
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExElement.DrawSelf(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <inheritdoc/>
+        </member>
+        <member name="M:UIeXtension.UIExElement.RecalculateDisplayStyle">
+            <summary>
+                Recalculates the styles of the element if necessary.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExElement.RefreshDisplayStyle">
+            <summary>
+                Recalculates the styles of the element.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExElement.DrawSelfStyleDisplay(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+                Depicts the current element with user styles <see cref="F:UIeXtension.UIExElement.StyleDisplay"/>.
+            </summary>
+        </member>
+        <member name="F:UIeXtension.UIExElement._lastTMLStyleUIPanel">
+            <summary>
+                Style saved after the last recalculation tModLoader.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExElement.RecalculateTMLDisplayStyle">
+            <summary>
+                Recalculating. TML Styles of the element, if necessary.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExElement.RefreshTMLDisplayStyle">
+            <summary>
+                Recalculating. TML style
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExElement.LoadTexturesTML">
+            <summary>
+                Downloads textures. TML style of the element.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.UIExElement.DrawSelfTML(Microsoft.Xna.Framework.Graphics.SpriteBatch)">
+            <summary>
+                Depicts the element with TML Style.
+            </summary>
+        </member>
+        <member name="T:UIeXtension.Utils.UtilsFinder">
+            <summary>
+                Static methods associated with the search for elements
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Utils.UtilsFinder.GetRootParent(Terraria.UI.UIElement)">
+            <summary>
+                Returns the root <see cref="T:Terraria.UI.UIElement"/> element-wood
+            </summary>
+        </member>
+        <member name="T:UIeXtension.Utils.UtilsLayout">
+            <summary>
+                Auxiliary class for layout elements.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Utils.UtilsLayout.GetForcedCalculatedDimensions(Terraria.UI.UIElement,UIeXtension.Styles.StyleLayoutChild,Terraria.UI.CalculatedStyle)">
+            <summary>
+                Close to the algorithm of work to the method GetDimensionsBasedOnParentDimensions class <see cref="T:Terraria.UI.UIElement"/>.
+            </summary>
+            <remarks>
+                <para>Required for the following methods class <see cref="T:UIeXtension.Utils.UtilsLayout"/>:</para>
+                <para><see cref="M:UIeXtension.Utils.UtilsLayout.GetForcedCalculatedOuterDimensions(Terraria.UI.UIElement,UIeXtension.Styles.StyleLayoutChild,Terraria.UI.CalculatedStyle)"/>;</para>
+                <para><see cref="M:UIeXtension.Utils.UtilsLayout.GetForcedCalculatedDimensions(Terraria.UI.UIElement,UIeXtension.Styles.StyleLayoutChild,Terraria.UI.CalculatedStyle)"/>;</para>
+                <para><see cref="M:UIeXtension.Utils.UtilsLayout.GetForcedCalculatedInnerDimensions(Terraria.UI.UIElement,UIeXtension.Styles.StyleLayoutChild,Terraria.UI.CalculatedStyle)"/></para>
+            </remarks>
+        </member>
+        <member name="M:UIeXtension.Utils.UtilsLayout.GetForcedCalculatedOuterDimensions(Terraria.UI.UIElement,UIeXtension.Styles.StyleLayoutChild,Terraria.UI.CalculatedStyle)">
+            <summary>
+                The circumcised method <see cref="M:Terraria.UI.UIElement.Recalculate"/>except that, 
+                he doesn't think _innerDimensions and at the end of the method is not called <see cref="M:Terraria.UI.UIElement.RecalculateChildren"/>
+            </summary>
+            <remarks>
+                V. <see cref="T:Terraria.UI.UIElement"/> method <see cref="M:Terraria.UI.UIElement.GetDimensions"/> returns _dimensions, 
+                methodical <see cref="M:Terraria.UI.UIElement.Recalculate"/>.
+                Without this method, it would be necessary to recalculate (during the arrangement of elements) the nested elements using the method. <see cref="M:Terraria.UI.UIElement.Recalculate"/>which, 
+                In turn, the method is <see cref="M:Terraria.UI.UIElement.RecalculateChildren"/>, and so on all over the branch.
+                As long as one element is not finished, it makes no sense, and it significantly reduces performance.
+            </remarks>
+            <param name="element">The element for which Dimensions are calculated</param>
+            <param name="style"></param>
+            <param name="parentInnerDimensions"></param>
+            <returns>Dimensions of the element <paramref name="element"/></returns>
+        </member>
+        <member name="M:UIeXtension.Utils.UtilsLayout.GetForcedCalculatedInnerDimensions(Terraria.UI.UIElement,UIeXtension.Styles.StyleLayoutChild,Terraria.UI.CalculatedStyle)">
+            <summary>
+                The circumcised method <see cref="M:Terraria.UI.UIElement.Recalculate"/> at the end of the method is not called <see cref="M:Terraria.UI.UIElement.RecalculateChildren"/>
+            </summary>
+            <remarks>
+                V. <see cref="T:Terraria.UI.UIElement"/> method <see cref="M:Terraria.UI.UIElement.GetInnerDimensions"/> return _innerDimensions. 
+                methodical <see cref="M:Terraria.UI.UIElement.Recalculate"/>.
+                Without this method, it would be necessary to recalculate (during the arrangement of elements) the nested elements using the method. <see cref="M:Terraria.UI.UIElement.Recalculate"/>which, 
+                In turn, the method is <see cref="M:Terraria.UI.UIElement.RecalculateChildren"/>, and so on all over the branch.
+                As long as one element is not finished, it makes no sense, and it significantly reduces performance.
+            </remarks>
+            <param name="element">The element for which it is calculated InnerDimensions</param>
+            <param name="style"></param>
+            <param name="parentInnerDimensions"></param>
+            <returns>InnerDimensions component <paramref name="element"/></returns>
+        </member>
+        <member name="T:UIeXtension.Utils.UtilsStyles">
+            <summary>
+                Auxiliary class for layout elements.
+            </summary>
+        </member>
+        <member name="M:UIeXtension.Utils.UtilsStyles.EqualsStyleDimensionFields(Terraria.UI.StyleDimension,Terraria.UI.StyleDimension)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Utils.UtilsStyles.EqualsReferences``2(``0,``1)">
+            <summary/>
+        </member>
+        <member name="M:UIeXtension.Utils.UtilsStyles.EqualsStyles``1(``0,``0)">
+            <summary>
+                Comparing two classes <see cref="T:UIeXtension.Styles.Base.StyleBase"/> on Nullable.
+                If both objects are not null Comparing their fields using the method 
+                <see cref="M:UIeXtension.Styles.Base.StyleBase.EqualsStylesFields(UIeXtension.Styles.Base.StyleBase)"/>
+            </summary>
+        </member>
+        <member name="T:UIeXtension.UIeXtension">
+            <summary>
+                Class class. <see cref="T:Terraria.ModLoader.Mod"/> library
+            </summary>
+        </member>
+    </members>
+</doc>

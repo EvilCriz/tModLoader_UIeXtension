@@ -1,0 +1,16 @@
+UI-Library.
+To date, the library has not been completed and adds container layouts:
+Canvas (expanded), StackPanel. WrapPanel. DockPanel. Grid. UniformGrid.
+
+Alpha. To date, the library has not been tested very well.
+
+Contains a page on GitHub c:
+- Source code (with comments).
+- Detailed tutorial.
+- Mode source code. ExampleModUIeXtension.
+- There will be documentation in the future.
+
+Reference: https://github.com/EvilCriz/tModLoader_UIeXtension/blob/main/README.md
+
+The source code with comments and tutorial has been translated into English, Ukrainian and Russian.
+Once the documentation has been added, it will also be translated into 3 languages.
